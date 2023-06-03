@@ -1,0 +1,3697 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.holder1, body header section .search {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+body {
+  width: 100%;
+  height: auto;
+}
+body header {
+  width: 100%;
+}
+body header {
+  width: 100%;
+  height: 100px;
+  background-color: #145E09;
+}
+body header section {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 100px;
+  grid-template-areas: "a input div";
+}
+body header section img {
+  margin-left: 50px;
+  grid-area: a;
+  width: 100px;
+  height: 100px;
+  border-radius: 100%;
+}
+body header section a img {
+  margin-left: 50px;
+  grid-area: a;
+  width: 100px;
+  height: 100px;
+  border-radius: 100%;
+}
+body header section .search input {
+  grid-area: input;
+  justify-content: center;
+  width: 300px;
+  height: 30px;
+  border-radius: 5px;
+  border: none;
+}
+body header section .search img {
+  width: 30px;
+  height: 30px;
+  margin: 0px;
+  border-radius: 5%;
+  background-color: gray;
+  align-content: center;
+}
+body header section .contactos {
+  display: flex;
+  justify-content: end;
+  margin: 20px;
+  align-items: center;
+}
+body header section .contactos li {
+  list-style: none;
+  margin: 20px;
+  background-color: white;
+  border-radius: 5px;
+}
+body header section .contactos li a {
+  font-size: 20px;
+  text-decoration: none;
+  list-style: none;
+  color: black;
+  padding: 0.5rem;
+}
+body header a {
+  display: flex;
+}
+body main {
+  width: 100%;
+  height: auto;
+  background-image: radial-gradient(circle, #4943de, #6e41dd, #8a3fdb, #a23dd9, #b73bd6, #d614ae, #e40086, #e50061, #c4391c, #915400, #585e00, #145e09);
+}
+body main h1 {
+  display: flex;
+  justify-content: center;
+  font-size: 70px;
+  color: #03bb85;
+  font-family: "Rubik Puddles", cursive;
+}
+body main h3 {
+  font-size: 45px;
+  display: flex;
+  justify-content: center;
+  color: #03bb85;
+}
+body main .primerdiv {
+  display: flex;
+  justify-content: space-around;
+  padding-top: 40px;
+  padding-bottom: 60px;
+}
+body main .primerdiv div {
+  background-image: url(../Img/fondiu.jpg);
+  width: 400px;
+  height: 550px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  border-radius: 20px;
+}
+body main .primerdiv div a {
+  text-decoration: none;
+  color: white;
+  width: 400px;
+  height: 500px;
+}
+body main .primerdiv div a h4 {
+  margin: 20px 50px 20px 50px;
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  font-family: "Pacifico", cursive;
+  font-size: 35px;
+  color: #a4fff7;
+  background-color: black;
+  font-weight: 200;
+}
+body main .primerdiv div a .h4 {
+  margin: 25px 90px 10px 90px;
+}
+body main .primerdiv div a img {
+  width: 300px;
+  height: 300px;
+  background-color: white;
+  margin: 20px 30px 30px 50px;
+  border-radius: 20px;
+}
+body main .primerdiv div a p {
+  font-size: 20px;
+  text-align: center;
+  padding: 5px;
+  background-color: black;
+  border-radius: 20px;
+  color: #03bb85;
+}
+body main h2 {
+  font-size: 70px;
+  color: white;
+  font-family: "Rubik Puddles", cursive;
+  display: flex;
+  padding-top: 20px;
+  flex-direction: row;
+  justify-content: center;
+  text-align: center;
+}
+body main .parafernalia {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas: "para1 para2 para3" "para4 para5 para6";
+  justify-items: center;
+}
+body main .parafernalia .para1 {
+  grid-area: para1;
+  width: 400px;
+  height: 400px;
+  margin: 15px;
+  background-image: url(../Img/fondoparafernalia.jpg);
+  border-radius: 30px;
+}
+body main .parafernalia .para2 {
+  grid-area: para2;
+  width: 400px;
+  height: 400px;
+  margin: 15px;
+  background-image: url(../Img/fondoparafernalia.jpg);
+  border-radius: 30px;
+}
+body main .parafernalia .para3 {
+  grid-area: para3;
+  width: 400px;
+  height: 400px;
+  margin: 15px;
+  background-image: url(../Img/fondoparafernalia.jpg);
+  border-radius: 30px;
+}
+body main .parafernalia .para4 {
+  grid-area: para4;
+  width: 400px;
+  height: 400px;
+  margin: 15px;
+  background-image: url(../Img/fondoparafernalia.jpg);
+  border-radius: 30px;
+}
+body main .parafernalia .para5 {
+  grid-area: para5;
+  width: 400px;
+  height: 400px;
+  margin: 15px;
+  background-image: url(../Img/fondoparafernalia.jpg);
+  border-radius: 30px;
+}
+body main .parafernalia .para6 {
+  grid-area: para6;
+  width: 400px;
+  height: 400px;
+  margin: 15px;
+  background-image: url(../Img/fondoparafernalia.jpg);
+  border-radius: 30px;
+}
+body main .parafernalia a {
+  text-decoration: none;
+}
+body main .parafernalia a p {
+  display: flex;
+  justify-content: center;
+  font-size: 40px;
+  font-family: "Pacifico", cursive;
+  color: white;
+  background-color: black;
+  border-radius: 30px;
+  margin: auto;
+  width: 250px;
+}
+body main .parafernalia a img {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  background-image: contain;
+}
+body main h3 {
+  display: flex;
+  justify-content: center;
+  padding-top: 30px;
+  font-size: 80px;
+  color: rgba(0, 0, 255, 0.7);
+  font-style: italic;
+}
+body main .semas {
+  padding-top: 50px;
+  display: grid;
+  width: 100%;
+  height: auto;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas: "sema1 sema2 sema3 sema4" "sema5 sema6 sema7 sema8";
+  justify-items: center;
+  gap: 30px;
+}
+body main .semas .sema1 {
+  background-image: url(../Img/fondosema.jpg);
+  width: 300px;
+  height: 450px;
+  grid-area: sema1;
+  text-decoration: none;
+  border-radius: 20px;
+}
+body main .semas .sema1 img {
+  width: 250px;
+  height: 250px;
+  display: flex;
+  margin: auto;
+  margin-top: 20px;
+  margin-bottom: 30px;
+  border-radius: 30px;
+}
+body main .semas .sema1 .descripcionsema {
+  font-size: 30px;
+  color: black;
+  background-color: white;
+  border-radius: 30px;
+  padding: 5px;
+  text-align: center;
+}
+body main .semas .sema1 .separador {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+body main .semas .sema1 .separador .precio {
+  font-size: 30px;
+  padding: 8px;
+  color: black;
+  background-color: white;
+  border-radius: 30px;
+}
+body main .semas .sema1 .separador .iralaimg {
+  font-size: 30px;
+  color: white;
+  background-color: blue;
+  height: 40px;
+  width: 100px;
+  border-radius: 30px;
+  margin: 5px;
+  padding-left: 25px;
+}
+body main .semas .sema2 {
+  background-image: url(../Img/fondosema.jpg);
+  width: 300px;
+  height: 450px;
+  grid-area: sema2;
+  text-decoration: none;
+  border-radius: 20px;
+}
+body main .semas .sema2 img {
+  width: 250px;
+  height: 250px;
+  display: flex;
+  margin: auto;
+  border-radius: 20px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+body main .semas .sema2 .descripcionsema {
+  font-size: 30px;
+  color: black;
+  background-color: white;
+  border-radius: 30px;
+  padding: 5px;
+  text-align: center;
+}
+body main .semas .sema2 .separador {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+body main .semas .sema2 .separador .precio {
+  font-size: 30px;
+  padding: 8px;
+  color: black;
+  background-color: white;
+  border-radius: 30px;
+}
+body main .semas .sema2 .separador .iralaimg {
+  font-size: 30px;
+  color: white;
+  background-color: blue;
+  height: 40px;
+  width: 100px;
+  border-radius: 30px;
+  margin: 5px;
+  padding-left: 25px;
+}
+body main .semas .sema3 {
+  background-image: url(../Img/fondosema.jpg);
+  width: 300px;
+  height: 450px;
+  grid-area: sema3;
+  text-decoration: none;
+  border-radius: 20px;
+}
+body main .semas .sema3 img {
+  width: 250px;
+  height: 250px;
+  display: flex;
+  margin: auto;
+  border-radius: 20px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+body main .semas .sema3 .descripcionsema {
+  font-size: 30px;
+  color: black;
+  background-color: white;
+  border-radius: 30px;
+  padding: 5px;
+  text-align: center;
+}
+body main .semas .sema3 .separador {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+body main .semas .sema3 .separador .precio {
+  font-size: 30px;
+  padding: 8px;
+  color: black;
+  background-color: white;
+  border-radius: 30px;
+}
+body main .semas .sema3 .separador .iralaimg {
+  font-size: 30px;
+  color: white;
+  background-color: blue;
+  height: 40px;
+  width: 100px;
+  border-radius: 30px;
+  margin: 5px;
+  padding-left: 25px;
+}
+body main .semas .sema4 {
+  background-image: url(../Img/fondosema.jpg);
+  width: 300px;
+  height: 450px;
+  grid-area: sema4;
+  text-decoration: none;
+  border-radius: 20px;
+}
+body main .semas .sema4 img {
+  width: 250px;
+  height: 250px;
+  display: flex;
+  margin: auto;
+  border-radius: 20px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+body main .semas .sema4 .descripcionsema {
+  font-size: 30px;
+  color: black;
+  background-color: white;
+  border-radius: 30px;
+  padding: 5px;
+  text-align: center;
+}
+body main .semas .sema4 .separador {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+body main .semas .sema4 .separador .precio {
+  font-size: 30px;
+  padding: 8px;
+  color: black;
+  background-color: white;
+  border-radius: 30px;
+}
+body main .semas .sema4 .separador .iralaimg {
+  font-size: 30px;
+  color: white;
+  background-color: blue;
+  height: 40px;
+  width: 100px;
+  border-radius: 30px;
+  margin: 5px;
+  padding-left: 25px;
+}
+body main .semas .sema5 {
+  background-image: url(../Img/fondosema.jpg);
+  width: 300px;
+  height: 450px;
+  grid-area: sema5;
+  text-decoration: none;
+  border-radius: 20px;
+}
+body main .semas .sema5 img {
+  width: 250px;
+  height: 250px;
+  display: flex;
+  margin: auto;
+  border-radius: 20px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+body main .semas .sema5 .descripcionsema {
+  font-size: 30px;
+  color: black;
+  background-color: white;
+  border-radius: 30px;
+  padding: 5px;
+  text-align: center;
+}
+body main .semas .sema5 .separador {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+body main .semas .sema5 .separador .precio {
+  font-size: 30px;
+  padding: 8px;
+  color: black;
+  background-color: white;
+  border-radius: 30px;
+}
+body main .semas .sema5 .separador .iralaimg {
+  font-size: 30px;
+  color: white;
+  background-color: blue;
+  height: 40px;
+  width: 100px;
+  border-radius: 30px;
+  margin: 5px;
+  padding-left: 25px;
+}
+body main .semas .sema6 {
+  background-image: url(../Img/fondosema.jpg);
+  width: 300px;
+  height: 450px;
+  grid-area: sema6;
+  text-decoration: none;
+  border-radius: 20px;
+}
+body main .semas .sema6 img {
+  width: 250px;
+  height: 250px;
+  display: flex;
+  margin: auto;
+  border-radius: 20px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+body main .semas .sema6 .descripcionsema {
+  font-size: 30px;
+  color: black;
+  background-color: white;
+  border-radius: 30px;
+  padding: 5px;
+  text-align: center;
+}
+body main .semas .sema6 .separador {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+body main .semas .sema6 .separador .precio {
+  font-size: 30px;
+  padding: 8px;
+  color: black;
+  background-color: white;
+  border-radius: 30px;
+}
+body main .semas .sema6 .separador .iralaimg {
+  font-size: 30px;
+  color: white;
+  background-color: blue;
+  height: 40px;
+  width: 100px;
+  border-radius: 30px;
+  margin: 5px;
+  padding-left: 25px;
+}
+body main .semas .sema7 {
+  background-image: url(../Img/fondosema.jpg);
+  width: 300px;
+  height: 450px;
+  grid-area: sema7;
+  text-decoration: none;
+  border-radius: 20px;
+}
+body main .semas .sema7 img {
+  width: 250px;
+  height: 250px;
+  display: flex;
+  margin: auto;
+  border-radius: 20px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+body main .semas .sema7 .descripcionsema {
+  font-size: 30px;
+  color: black;
+  background-color: white;
+  border-radius: 30px;
+  padding: 5px;
+  text-align: center;
+}
+body main .semas .sema7 .separador {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+body main .semas .sema7 .separador .precio {
+  font-size: 30px;
+  padding: 8px;
+  color: black;
+  background-color: white;
+  border-radius: 30px;
+}
+body main .semas .sema7 .separador .iralaimg {
+  font-size: 30px;
+  color: white;
+  background-color: blue;
+  height: 40px;
+  width: 100px;
+  border-radius: 30px;
+  margin: 5px;
+  padding-left: 25px;
+}
+body main .semas .sema8 {
+  background-image: url(../Img/fondosema.jpg);
+  width: 300px;
+  height: 450px;
+  grid-area: sema8;
+  text-decoration: none;
+  border-radius: 20px;
+}
+body main .semas .sema8 img {
+  width: 250px;
+  height: 250px;
+  display: flex;
+  margin: auto;
+  border-radius: 20px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+body main .semas .sema8 .descripcionsema {
+  font-size: 30px;
+  color: black;
+  background-color: white;
+  border-radius: 30px;
+  padding: 5px;
+  text-align: center;
+}
+body main .semas .sema8 .separador {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+body main .semas .sema8 .separador .precio {
+  font-size: 30px;
+  padding: 8px;
+  color: black;
+  background-color: white;
+  border-radius: 30px;
+}
+body main .semas .sema8 .separador .iralaimg {
+  font-size: 30px;
+  color: white;
+  background-color: blue;
+  height: 40px;
+  width: 100px;
+  border-radius: 30px;
+  margin: 5px;
+  padding-left: 25px;
+}
+body main .foto {
+  width: 100%;
+  height: auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas: "foto1 foto2 foto3 foto4" "foto5 foto6 foto7 foto8";
+  gap: 30px;
+  justify-items: center;
+}
+body main .foto .foto1 {
+  grid-area: foto1;
+  background-image: url(../Img/fondosema.jpg);
+  width: 300px;
+  height: 450px;
+  text-decoration: none;
+  border-radius: 20px;
+}
+body main .foto .foto1 img {
+  width: 250px;
+  height: 250px;
+  display: flex;
+  margin: auto;
+  border-radius: 20px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+body main .foto .foto1 .descripcionfoto {
+  font-size: 30px;
+  color: black;
+  background-color: white;
+  border-radius: 30px;
+  padding: 5px;
+  text-align: center;
+}
+body main .foto .foto1 .separador {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+body main .foto .foto1 .separador .precio {
+  font-size: 30px;
+  padding: 8px;
+  color: black;
+  background-color: white;
+  border-radius: 30px;
+}
+body main .foto .foto1 .separador .iralaimg {
+  font-size: 30px;
+  color: white;
+  background-color: blue;
+  height: 40px;
+  width: 100px;
+  border-radius: 30px;
+  margin: 5px;
+  padding-left: 25px;
+}
+body main .foto .foto2 {
+  grid-area: foto2;
+  background-image: url(../Img/fondosema.jpg);
+  width: 300px;
+  height: 450px;
+  text-decoration: none;
+  border-radius: 20px;
+}
+body main .foto .foto2 img {
+  width: 250px;
+  height: 250px;
+  display: flex;
+  margin: auto;
+  border-radius: 20px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+body main .foto .foto2 .descripcionfoto {
+  font-size: 30px;
+  color: black;
+  background-color: white;
+  border-radius: 30px;
+  padding: 5px;
+  text-align: center;
+}
+body main .foto .foto2 .separador {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+body main .foto .foto2 .separador .precio {
+  font-size: 30px;
+  padding: 8px;
+  color: black;
+  background-color: white;
+  border-radius: 30px;
+}
+body main .foto .foto2 .separador .iralaimg {
+  font-size: 30px;
+  color: white;
+  background-color: blue;
+  height: 40px;
+  width: 100px;
+  border-radius: 30px;
+  margin: 5px;
+  padding-left: 25px;
+}
+body main .foto .foto3 {
+  grid-area: foto3;
+  background-image: url(../Img/fondosema.jpg);
+  width: 300px;
+  height: 450px;
+  text-decoration: none;
+  border-radius: 20px;
+}
+body main .foto .foto3 img {
+  width: 250px;
+  height: 250px;
+  display: flex;
+  margin: auto;
+  border-radius: 20px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+body main .foto .foto3 .descripcionfoto {
+  font-size: 30px;
+  color: black;
+  background-color: white;
+  border-radius: 30px;
+  padding: 5px;
+  text-align: center;
+}
+body main .foto .foto3 .separador {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+body main .foto .foto3 .separador .precio {
+  font-size: 30px;
+  padding: 8px;
+  color: black;
+  background-color: white;
+  border-radius: 30px;
+}
+body main .foto .foto3 .separador .iralaimg {
+  font-size: 30px;
+  color: white;
+  background-color: blue;
+  height: 40px;
+  width: 100px;
+  border-radius: 30px;
+  margin: 5px;
+  padding-left: 25px;
+}
+body main .foto .foto4 {
+  grid-area: foto4;
+  background-image: url(../Img/fondosema.jpg);
+  width: 300px;
+  height: 450px;
+  text-decoration: none;
+  border-radius: 20px;
+}
+body main .foto .foto4 img {
+  width: 250px;
+  height: 250px;
+  display: flex;
+  margin: auto;
+  border-radius: 20px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+body main .foto .foto4 .descripcionfoto {
+  font-size: 30px;
+  color: black;
+  background-color: white;
+  border-radius: 30px;
+  padding: 5px;
+  text-align: center;
+}
+body main .foto .foto4 .separador {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+body main .foto .foto4 .separador .precio {
+  font-size: 30px;
+  padding: 8px;
+  color: black;
+  background-color: white;
+  border-radius: 30px;
+}
+body main .foto .foto4 .separador .iralaimg {
+  font-size: 30px;
+  color: white;
+  background-color: blue;
+  height: 40px;
+  width: 100px;
+  border-radius: 30px;
+  margin: 5px;
+  padding-left: 25px;
+}
+body main .foto .foto5 {
+  grid-area: foto5;
+  background-image: url(../Img/fondosema.jpg);
+  width: 300px;
+  height: 450px;
+  text-decoration: none;
+  border-radius: 20px;
+}
+body main .foto .foto5 img {
+  width: 250px;
+  height: 250px;
+  display: flex;
+  margin: auto;
+  border-radius: 20px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+body main .foto .foto5 .descripcionfoto {
+  font-size: 30px;
+  color: black;
+  background-color: white;
+  border-radius: 30px;
+  padding: 5px;
+  text-align: center;
+}
+body main .foto .foto5 .separador {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  text-align: center;
+}
+body main .foto .foto5 .separador .precio {
+  font-size: 30px;
+  padding: 8px;
+  color: black;
+  background-color: white;
+  border-radius: 30px;
+}
+body main .foto .foto5 .separador .iralaimg {
+  font-size: 30px;
+  color: white;
+  background-color: blue;
+  height: 40px;
+  width: 100px;
+  border-radius: 30px;
+  margin: 5px;
+  padding-left: 25px;
+}
+body main .foto .foto6 {
+  grid-area: foto6;
+  background-image: url(../Img/fondosema.jpg);
+  width: 300px;
+  height: 450px;
+  text-decoration: none;
+  border-radius: 20px;
+}
+body main .foto .foto6 img {
+  width: 250px;
+  height: 250px;
+  display: flex;
+  margin: auto;
+  border-radius: 20px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+body main .foto .foto6 .descripcionfoto {
+  font-size: 30px;
+  color: black;
+  background-color: white;
+  border-radius: 30px;
+  padding: 5px;
+  text-align: center;
+}
+body main .foto .foto6 .separador {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+body main .foto .foto6 .separador .precio {
+  font-size: 30px;
+  padding: 8px;
+  color: black;
+  background-color: white;
+  border-radius: 30px;
+}
+body main .foto .foto6 .separador .iralaimg {
+  font-size: 30px;
+  color: white;
+  background-color: blue;
+  height: 40px;
+  width: 100px;
+  border-radius: 30px;
+  margin: 5px;
+  padding-left: 25px;
+}
+body main .foto .foto7 {
+  grid-area: foto7;
+  background-image: url(../Img/fondosema.jpg);
+  width: 300px;
+  height: 450px;
+  text-decoration: none;
+  border-radius: 20px;
+}
+body main .foto .foto7 img {
+  width: 250px;
+  height: 250px;
+  display: flex;
+  margin: auto;
+  border-radius: 20px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+body main .foto .foto7 .descripcionfoto {
+  font-size: 30px;
+  color: black;
+  background-color: white;
+  border-radius: 30px;
+  padding: 5px;
+  text-align: center;
+}
+body main .foto .foto7 .separador {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+body main .foto .foto7 .separador .precio {
+  font-size: 30px;
+  padding: 8px;
+  color: black;
+  background-color: white;
+  border-radius: 30px;
+}
+body main .foto .foto7 .separador .iralaimg {
+  font-size: 30px;
+  color: white;
+  background-color: blue;
+  height: 40px;
+  width: 100px;
+  border-radius: 30px;
+  margin: 5px;
+  padding-left: 25px;
+}
+body main .foto .foto8 {
+  grid-area: foto8;
+  background-image: url(../Img/fondosema.jpg);
+  width: 300px;
+  height: 450px;
+  text-decoration: none;
+  border-radius: 20px;
+}
+body main .foto .foto8 img {
+  width: 250px;
+  height: 250px;
+  display: flex;
+  margin: auto;
+  border-radius: 20px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+body main .foto .foto8 .descripcionfoto {
+  font-size: 30px;
+  color: black;
+  background-color: white;
+  border-radius: 30px;
+  padding: 5px;
+  text-align: center;
+}
+body main .foto .foto8 .separador {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+body main .foto .foto8 .separador .precio {
+  font-size: 30px;
+  padding: 8px;
+  color: black;
+  background-color: white;
+  border-radius: 30px;
+}
+body main .foto .foto8 .separador .iralaimg {
+  font-size: 30px;
+  color: white;
+  background-color: blue;
+  height: 40px;
+  width: 100px;
+  border-radius: 30px;
+  margin: 5px;
+  padding-left: 25px;
+}
+body main .cbd {
+  width: 100%;
+  height: auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas: "cbd1 cbd2 cbd3 cbd4" "cbd5 cbd6 cbd7 cbd8";
+  gap: 30px;
+  justify-items: center;
+  padding-bottom: 30px;
+}
+body main .cbd .cbd1 {
+  grid-area: cbd1;
+  background-image: url(../Img/fondosema.jpg);
+  width: 300px;
+  height: 450px;
+  text-decoration: none;
+  border-radius: 20px;
+}
+body main .cbd .cbd1 img {
+  width: 250px;
+  height: 250px;
+  display: flex;
+  margin: auto;
+  border-radius: 20px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+body main .cbd .cbd1 .descripcionfoto {
+  font-size: 30px;
+  color: black;
+  background-color: white;
+  border-radius: 30px;
+  padding: 5px;
+  text-align: center;
+}
+body main .cbd .cbd1 .separador {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+body main .cbd .cbd1 .separador .precio {
+  font-size: 30px;
+  padding: 8px;
+  color: black;
+  background-color: white;
+  border-radius: 30px;
+}
+body main .cbd .cbd1 .separador .iralaimg {
+  font-size: 30px;
+  color: white;
+  background-color: blue;
+  height: 40px;
+  width: 100px;
+  border-radius: 30px;
+  margin: 5px;
+  padding-left: 25px;
+}
+body main .cbd .cbd2 {
+  grid-area: cbd2;
+  background-image: url(../Img/fondosema.jpg);
+  width: 300px;
+  height: 450px;
+  text-decoration: none;
+  border-radius: 20px;
+}
+body main .cbd .cbd2 img {
+  width: 250px;
+  height: 250px;
+  display: flex;
+  margin: auto;
+  border-radius: 20px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+body main .cbd .cbd2 .descripcionfoto {
+  font-size: 30px;
+  color: black;
+  background-color: white;
+  border-radius: 30px;
+  padding: 5px;
+  text-align: center;
+}
+body main .cbd .cbd2 .separador {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+body main .cbd .cbd2 .separador .precio {
+  font-size: 30px;
+  padding: 8px;
+  color: black;
+  background-color: white;
+  border-radius: 30px;
+}
+body main .cbd .cbd2 .separador .iralaimg {
+  font-size: 30px;
+  color: white;
+  background-color: blue;
+  height: 40px;
+  width: 100px;
+  border-radius: 30px;
+  margin: 5px;
+  padding-left: 25px;
+}
+body main .cbd .cbd3 {
+  grid-area: cbd3;
+  background-image: url(../Img/fondosema.jpg);
+  width: 300px;
+  height: 450px;
+  text-decoration: none;
+  border-radius: 20px;
+}
+body main .cbd .cbd3 img {
+  width: 250px;
+  height: 250px;
+  display: flex;
+  margin: auto;
+  border-radius: 20px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+body main .cbd .cbd3 .descripcionfoto {
+  font-size: 30px;
+  color: black;
+  background-color: white;
+  border-radius: 30px;
+  padding: 5px;
+  text-align: center;
+}
+body main .cbd .cbd3 .separador {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+body main .cbd .cbd3 .separador .precio {
+  font-size: 30px;
+  padding: 8px;
+  color: black;
+  background-color: white;
+  border-radius: 30px;
+}
+body main .cbd .cbd3 .separador .iralaimg {
+  font-size: 30px;
+  color: white;
+  background-color: blue;
+  height: 40px;
+  width: 100px;
+  border-radius: 30px;
+  margin: 5px;
+  padding-left: 25px;
+}
+body main .cbd .cbd4 {
+  grid-area: cbd4;
+  background-image: url(../Img/fondosema.jpg);
+  width: 300px;
+  height: 450px;
+  text-decoration: none;
+  border-radius: 20px;
+}
+body main .cbd .cbd4 img {
+  width: 250px;
+  height: 250px;
+  display: flex;
+  margin: auto;
+  border-radius: 20px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+body main .cbd .cbd4 .descripcionfoto {
+  font-size: 30px;
+  color: black;
+  background-color: white;
+  border-radius: 30px;
+  padding: 5px;
+  text-align: center;
+}
+body main .cbd .cbd4 .separador {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+body main .cbd .cbd4 .separador .precio {
+  font-size: 30px;
+  padding: 8px;
+  color: black;
+  background-color: white;
+  border-radius: 30px;
+}
+body main .cbd .cbd4 .separador .iralaimg {
+  font-size: 30px;
+  color: white;
+  background-color: blue;
+  height: 40px;
+  width: 100px;
+  border-radius: 30px;
+  margin: 5px;
+  padding-left: 25px;
+}
+body main .cbd .cbd5 {
+  grid-area: cbd5;
+  background-image: url(../Img/fondosema.jpg);
+  width: 300px;
+  height: 450px;
+  text-decoration: none;
+  border-radius: 20px;
+}
+body main .cbd .cbd5 img {
+  width: 250px;
+  height: 250px;
+  display: flex;
+  margin: auto;
+  border-radius: 20px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+body main .cbd .cbd5 .descripcionfoto {
+  font-size: 30px;
+  color: black;
+  background-color: white;
+  border-radius: 30px;
+  padding: 5px;
+  text-align: center;
+}
+body main .cbd .cbd5 .separador {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+body main .cbd .cbd5 .separador .precio {
+  font-size: 30px;
+  padding: 8px;
+  color: black;
+  background-color: white;
+  border-radius: 30px;
+}
+body main .cbd .cbd5 .separador .iralaimg {
+  font-size: 30px;
+  color: white;
+  background-color: blue;
+  height: 40px;
+  width: 100px;
+  border-radius: 30px;
+  margin: 5px;
+  padding-left: 25px;
+}
+body main .cbd .cbd6 {
+  grid-area: cbd6;
+  background-image: url(../Img/fondosema.jpg);
+  width: 300px;
+  height: 450px;
+  text-decoration: none;
+  border-radius: 20px;
+}
+body main .cbd .cbd6 img {
+  width: 250px;
+  height: 250px;
+  display: flex;
+  margin: auto;
+  border-radius: 20px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+body main .cbd .cbd6 .descripcionfoto {
+  font-size: 30px;
+  color: black;
+  background-color: white;
+  border-radius: 30px;
+  padding: 5px;
+  text-align: center;
+}
+body main .cbd .cbd6 .separador {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+body main .cbd .cbd6 .separador .precio {
+  font-size: 30px;
+  padding: 8px;
+  color: black;
+  background-color: white;
+  border-radius: 30px;
+}
+body main .cbd .cbd6 .separador .iralaimg {
+  font-size: 30px;
+  color: white;
+  background-color: blue;
+  height: 40px;
+  width: 100px;
+  border-radius: 30px;
+  margin: 5px;
+  padding-left: 25px;
+}
+body main .cbd .cbd7 {
+  grid-area: cbd7;
+  background-image: url(../Img/fondosema.jpg);
+  width: 300px;
+  height: 450px;
+  text-decoration: none;
+  border-radius: 20px;
+}
+body main .cbd .cbd7 img {
+  width: 250px;
+  height: 250px;
+  display: flex;
+  margin: auto;
+  border-radius: 20px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+body main .cbd .cbd7 .descripcionfoto {
+  font-size: 30px;
+  color: black;
+  background-color: white;
+  border-radius: 30px;
+  padding: 5px;
+  text-align: center;
+}
+body main .cbd .cbd7 .separador {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+body main .cbd .cbd7 .separador .precio {
+  font-size: 30px;
+  padding: 8px;
+  color: black;
+  background-color: white;
+  border-radius: 30px;
+}
+body main .cbd .cbd7 .separador .iralaimg {
+  font-size: 30px;
+  color: white;
+  background-color: blue;
+  height: 40px;
+  width: 100px;
+  border-radius: 30px;
+  margin: 5px;
+  padding-left: 25px;
+}
+body main .cbd .cbd8 {
+  grid-area: cbd8;
+  background-image: url(../Img/fondosema.jpg);
+  width: 300px;
+  height: 450px;
+  text-decoration: none;
+  border-radius: 20px;
+}
+body main .cbd .cbd8 img {
+  width: 250px;
+  height: 250px;
+  display: flex;
+  margin: auto;
+  border-radius: 20px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+body main .cbd .cbd8 .descripcionfoto {
+  font-size: 30px;
+  color: black;
+  background-color: white;
+  border-radius: 30px;
+  padding: 5px;
+  text-align: center;
+}
+body main .cbd .cbd8 .separador {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+body main .cbd .cbd8 .separador .precio {
+  font-size: 30px;
+  padding: 8px;
+  color: black;
+  background-color: white;
+  border-radius: 30px;
+}
+body main .cbd .cbd8 .separador .iralaimg {
+  font-size: 30px;
+  color: white;
+  background-color: blue;
+  height: 40px;
+  width: 100px;
+  border-radius: 30px;
+  margin: 5px;
+  padding-left: 25px;
+}
+body main .armatuindoor {
+  width: 100%;
+  height: auto;
+}
+body main .armatuindoor .h3ventilacion {
+  color: rgba(10, 78, 167, 0.945);
+  font-family: "Cherry Bomb One", cursive;
+  background-image: url(../Img/fondoh3.jpg);
+  background-position: center;
+  width: 400px;
+  height: 100px;
+  border-radius: 100px;
+  padding-top: 0px;
+  margin: auto;
+  font-size: 70px;
+}
+body main .armatuindoor .carpas {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1f;
+  grid-template-areas: "h3 h3 h3" "carpa1 carpa2 carpa3";
+  padding: 30px;
+  gap: 30px;
+  justify-items: center;
+}
+body main .armatuindoor .carpas .h3 {
+  grid-area: h3;
+  color: rgba(10, 78, 167, 0.945);
+  font-family: "Cherry Bomb One", cursive;
+  background-image: url(../Img/fondoh3.jpg);
+  background-position: auto;
+  width: 900px;
+  height: 100px;
+  border-radius: 100px;
+  padding-top: 0px;
+  margin: auto;
+  font-size: 70px;
+  margin: 20px;
+}
+body main .armatuindoor .carpas .carpa1 {
+  grid-area: carpa1;
+  background-image: url(../Img/Galaxiaa.jpg);
+  width: 300px;
+  height: 450px;
+  text-decoration: none;
+  border-radius: 20px;
+}
+body main .armatuindoor .carpas .carpa1 img {
+  width: 250px;
+  height: 250px;
+  display: flex;
+  margin: auto;
+  border-radius: 20px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+body main .armatuindoor .carpas .carpa1 .descripcionfoto {
+  font-size: 30px;
+  background-color: white;
+  color: black;
+  border-radius: 30px;
+  padding: 5px;
+  text-align: center;
+}
+body main .armatuindoor .carpas .carpa1 .separador {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+body main .armatuindoor .carpas .carpa1 .separador .precio {
+  font-size: 30px;
+  padding: 8px;
+  color: black;
+  background-color: white;
+  border-radius: 30px;
+}
+body main .armatuindoor .carpas .carpa1 .separador .iralaimg {
+  font-size: 30px;
+  color: white;
+  background-color: #4943de;
+  height: 40px;
+  width: 100px;
+  border-radius: 30px;
+  margin: 5px;
+  padding-left: 25px;
+}
+body main .armatuindoor .carpas .carpa2 {
+  grid-area: carpa2;
+  background-image: url(../Img/Galaxiaa.jpg);
+  width: 300px;
+  height: 450px;
+  text-decoration: none;
+  border-radius: 20px;
+}
+body main .armatuindoor .carpas .carpa2 img {
+  width: 250px;
+  height: 250px;
+  display: flex;
+  margin: auto;
+  border-radius: 20px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+body main .armatuindoor .carpas .carpa2 .descripcionfoto {
+  font-size: 30px;
+  background-color: white;
+  color: black;
+  border-radius: 30px;
+  padding: 5px;
+  text-align: center;
+}
+body main .armatuindoor .carpas .carpa2 .separador {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+body main .armatuindoor .carpas .carpa2 .separador .precio {
+  font-size: 30px;
+  padding: 8px;
+  color: black;
+  background-color: white;
+  border-radius: 30px;
+}
+body main .armatuindoor .carpas .carpa2 .separador .iralaimg {
+  font-size: 30px;
+  color: white;
+  background-color: #4943de;
+  height: 40px;
+  width: 100px;
+  border-radius: 30px;
+  margin: 5px;
+  padding-left: 25px;
+}
+body main .armatuindoor .carpas .carpa3 {
+  grid-area: carpa3;
+  background-image: url(../Img/Galaxiaa.jpg);
+  width: 300px;
+  height: 450px;
+  text-decoration: none;
+  border-radius: 20px;
+}
+body main .armatuindoor .carpas .carpa3 img {
+  width: 250px;
+  height: 250px;
+  display: flex;
+  margin: auto;
+  border-radius: 20px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+body main .armatuindoor .carpas .carpa3 .descripcionfoto {
+  font-size: 30px;
+  background-color: white;
+  color: black;
+  border-radius: 30px;
+  padding: 5px;
+  text-align: center;
+}
+body main .armatuindoor .carpas .carpa3 .separador {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+body main .armatuindoor .carpas .carpa3 .separador .precio {
+  font-size: 30px;
+  padding: 8px;
+  color: black;
+  background-color: white;
+  border-radius: 30px;
+}
+body main .armatuindoor .carpas .carpa3 .separador .iralaimg {
+  font-size: 30px;
+  color: white;
+  background-color: #4943de;
+  height: 40px;
+  width: 100px;
+  border-radius: 30px;
+  margin: 5px;
+  padding-left: 25px;
+}
+body main .armatuindoor .h3 {
+  grid-area: h3;
+  color: rgba(10, 78, 167, 0.945);
+  font-family: "Cherry Bomb One", cursive;
+  background-image: url(../Img/fondoh3.jpg);
+  background-position: auto;
+  width: 900px;
+  height: 100px;
+  border-radius: 100px;
+  padding-top: 0px;
+  font-size: 70px;
+  margin: auto;
+}
+body main .armatuindoor .iluminacion {
+  width: 100%;
+  height: auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+  grid-template-areas: "iluminacion1 iluminacion2 iluminacion3 iluminacion4";
+  padding: 30px;
+  gap: 30px;
+  justify-items: center;
+}
+body main .armatuindoor .iluminacion .iluminacion1 {
+  background-image: url(../Img/Galaxiaa.jpg);
+  grid-area: iluminacion1;
+  width: 300px;
+  height: 450px;
+  text-decoration: none;
+  font-size: 30px;
+  text-align: center;
+  border-radius: 20px;
+}
+body main .armatuindoor .iluminacion .iluminacion1 img {
+  width: 250px;
+  height: 250px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  border-radius: 30px;
+}
+body main .armatuindoor .iluminacion .iluminacion1 .descripcionfoto {
+  font-size: 30px;
+  background-color: white;
+  color: black;
+  border-radius: 30px;
+  padding: 5px;
+  text-align: center;
+}
+body main .armatuindoor .iluminacion .iluminacion1 .separador {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+body main .armatuindoor .iluminacion .iluminacion1 .separador .precio {
+  font-size: 30px;
+  padding: 8px;
+  color: black;
+  background-color: white;
+  border-radius: 30px;
+}
+body main .armatuindoor .iluminacion .iluminacion1 .separador .iralaimg {
+  font-size: 30px;
+  color: white;
+  background-color: #4943de;
+  height: 40px;
+  width: 100px;
+  border-radius: 30px;
+  margin: 5px;
+}
+body main .armatuindoor .iluminacion .iluminacion2 {
+  background-image: url(../Img/Galaxiaa.jpg);
+  grid-area: iluminacion2;
+  width: 300px;
+  height: 450px;
+  text-decoration: none;
+  font-size: 30px;
+  text-align: center;
+  border-radius: 20px;
+}
+body main .armatuindoor .iluminacion .iluminacion2 img {
+  width: 250px;
+  height: 250px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  border-radius: 30px;
+}
+body main .armatuindoor .iluminacion .iluminacion2 .descripcionfoto {
+  font-size: 30px;
+  background-color: white;
+  color: black;
+  border-radius: 30px;
+  padding: 5px;
+  text-align: center;
+}
+body main .armatuindoor .iluminacion .iluminacion2 .separador {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+body main .armatuindoor .iluminacion .iluminacion2 .separador .precio {
+  font-size: 30px;
+  padding: 8px;
+  color: black;
+  background-color: white;
+  border-radius: 30px;
+}
+body main .armatuindoor .iluminacion .iluminacion2 .separador .iralaimg {
+  font-size: 30px;
+  color: white;
+  background-color: #4943de;
+  height: 40px;
+  width: 100px;
+  border-radius: 30px;
+  margin: 5px;
+}
+body main .armatuindoor .iluminacion .iluminacion3 {
+  background-image: url(../Img/Galaxiaa.jpg);
+  grid-area: iluminacion3;
+  width: 300px;
+  height: 450px;
+  text-decoration: none;
+  font-size: 30px;
+  text-align: center;
+  border-radius: 20px;
+}
+body main .armatuindoor .iluminacion .iluminacion3 img {
+  width: 250px;
+  height: 250px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  border-radius: 30px;
+}
+body main .armatuindoor .iluminacion .iluminacion3 .descripcionfoto {
+  font-size: 30px;
+  background-color: white;
+  color: black;
+  border-radius: 30px;
+  padding: 5px;
+  text-align: center;
+}
+body main .armatuindoor .iluminacion .iluminacion3 .separador {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+body main .armatuindoor .iluminacion .iluminacion3 .separador .precio {
+  font-size: 30px;
+  padding: 8px;
+  color: black;
+  background-color: white;
+  border-radius: 30px;
+}
+body main .armatuindoor .iluminacion .iluminacion3 .separador .iralaimg {
+  font-size: 30px;
+  color: white;
+  background-color: #4943de;
+  height: 40px;
+  width: 100px;
+  border-radius: 30px;
+  margin: 5px;
+}
+body main .armatuindoor .iluminacion .iluminacion4 {
+  background-image: url(../Img/Galaxiaa.jpg);
+  grid-area: iluminacion4;
+  width: 300px;
+  height: 450px;
+  text-decoration: none;
+  font-size: 30px;
+  text-align: center;
+  border-radius: 20px;
+}
+body main .armatuindoor .iluminacion .iluminacion4 img {
+  width: 250px;
+  height: 250px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  border-radius: 30px;
+}
+body main .armatuindoor .iluminacion .iluminacion4 .descripcionfoto {
+  font-size: 30px;
+  background-color: white;
+  color: black;
+  border-radius: 30px;
+  padding: 5px;
+  text-align: center;
+}
+body main .armatuindoor .iluminacion .iluminacion4 .separador {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+body main .armatuindoor .iluminacion .iluminacion4 .separador .precio {
+  font-size: 30px;
+  padding: 8px;
+  color: black;
+  background-color: white;
+  border-radius: 30px;
+}
+body main .armatuindoor .iluminacion .iluminacion4 .separador .iralaimg {
+  font-size: 30px;
+  color: white;
+  background-color: #4943de;
+  height: 40px;
+  width: 100px;
+  border-radius: 30px;
+  margin: 5px;
+}
+body main .armatuindoor .ventilacion {
+  width: 100%;
+  height: auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+  grid-template-areas: "ventilacion1 ventilacion2 ventilacion3 ventilacion4";
+  padding: 30px;
+  gap: 30px;
+  justify-items: center;
+}
+body main .armatuindoor .ventilacion .ventilacion1 {
+  background-image: url(../Img/Galaxiaa.jpg);
+  grid-area: ventilacion1;
+  width: 300px;
+  height: 450px;
+  text-decoration: none;
+  font-size: 30px;
+  text-align: center;
+  border-radius: 20px;
+}
+body main .armatuindoor .ventilacion .ventilacion1 img {
+  width: 250px;
+  height: 250px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  border-radius: 30px;
+}
+body main .armatuindoor .ventilacion .ventilacion1 .descripcionfoto {
+  font-size: 30px;
+  background-color: white;
+  color: black;
+  border-radius: 30px;
+  padding: 5px;
+  text-align: center;
+}
+body main .armatuindoor .ventilacion .ventilacion1 .separador {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+body main .armatuindoor .ventilacion .ventilacion1 .separador .precio {
+  font-size: 30px;
+  padding: 8px;
+  color: black;
+  background-color: white;
+  border-radius: 30px;
+}
+body main .armatuindoor .ventilacion .ventilacion1 .separador .iralaimg {
+  font-size: 30px;
+  color: white;
+  background-color: #4943de;
+  height: 40px;
+  width: 100px;
+  border-radius: 30px;
+  margin: 5px;
+}
+body main .armatuindoor .ventilacion .ventilacion2 {
+  background-image: url(../Img/Galaxiaa.jpg);
+  grid-area: ventilacion2;
+  width: 300px;
+  height: 450px;
+  text-decoration: none;
+  font-size: 30px;
+  text-align: center;
+  border-radius: 20px;
+}
+body main .armatuindoor .ventilacion .ventilacion2 img {
+  width: 250px;
+  height: 250px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  border-radius: 30px;
+}
+body main .armatuindoor .ventilacion .ventilacion2 .descripcionfoto {
+  font-size: 30px;
+  background-color: white;
+  color: black;
+  border-radius: 30px;
+  padding: 5px;
+  text-align: center;
+}
+body main .armatuindoor .ventilacion .ventilacion2 .separador {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+body main .armatuindoor .ventilacion .ventilacion2 .separador .precio {
+  font-size: 30px;
+  padding: 8px;
+  color: black;
+  background-color: white;
+  border-radius: 30px;
+}
+body main .armatuindoor .ventilacion .ventilacion2 .separador .iralaimg {
+  font-size: 30px;
+  color: white;
+  background-color: #4943de;
+  height: 40px;
+  width: 100px;
+  border-radius: 30px;
+  margin: 5px;
+}
+body main .armatuindoor .ventilacion .ventilacion3 {
+  background-image: url(../Img/Galaxiaa.jpg);
+  grid-area: ventilacion3;
+  width: 300px;
+  height: 450px;
+  text-decoration: none;
+  font-size: 30px;
+  text-align: center;
+  border-radius: 20px;
+}
+body main .armatuindoor .ventilacion .ventilacion3 img {
+  width: 250px;
+  height: 250px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  border-radius: 30px;
+}
+body main .armatuindoor .ventilacion .ventilacion3 .descripcionfoto {
+  font-size: 30px;
+  background-color: white;
+  color: black;
+  border-radius: 30px;
+  padding: 5px;
+  text-align: center;
+}
+body main .armatuindoor .ventilacion .ventilacion3 .separador {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+body main .armatuindoor .ventilacion .ventilacion3 .separador .precio {
+  font-size: 30px;
+  padding: 8px;
+  color: black;
+  background-color: white;
+  border-radius: 30px;
+}
+body main .armatuindoor .ventilacion .ventilacion3 .separador .iralaimg {
+  font-size: 30px;
+  color: white;
+  background-color: #4943de;
+  height: 40px;
+  width: 100px;
+  border-radius: 30px;
+  margin: 5px;
+}
+body main .armatuindoor .ventilacion .ventilacion4 {
+  background-image: url(../Img/Galaxiaa.jpg);
+  grid-area: ventilacion4;
+  width: 300px;
+  height: 450px;
+  text-decoration: none;
+  font-size: 30px;
+  text-align: center;
+  border-radius: 20px;
+}
+body main .armatuindoor .ventilacion .ventilacion4 img {
+  width: 250px;
+  height: 250px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  border-radius: 30px;
+}
+body main .armatuindoor .ventilacion .ventilacion4 .descripcionfoto {
+  font-size: 30px;
+  background-color: white;
+  color: black;
+  border-radius: 30px;
+  padding: 5px;
+  text-align: center;
+}
+body main .armatuindoor .ventilacion .ventilacion4 .separador {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+body main .armatuindoor .ventilacion .ventilacion4 .separador .precio {
+  font-size: 30px;
+  padding: 8px;
+  color: black;
+  background-color: white;
+  border-radius: 30px;
+}
+body main .armatuindoor .ventilacion .ventilacion4 .separador .iralaimg {
+  font-size: 30px;
+  color: white;
+  background-color: #4943de;
+  height: 40px;
+  width: 100px;
+  border-radius: 30px;
+  margin: 5px;
+}
+body main .armatuindoor .timer {
+  width: 100%;
+  height: auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+  grid-template-areas: "timer1 timer2 timer3";
+  padding: 30px;
+  gap: 30px;
+  justify-items: center;
+}
+body main .armatuindoor .timer .timer1 {
+  background-image: url(../Img/Galaxiaa.jpg);
+  grid-area: timer1;
+  width: 300px;
+  height: 450px;
+  text-decoration: none;
+  font-size: 30px;
+  text-align: center;
+  border-radius: 20px;
+}
+body main .armatuindoor .timer .timer1 img {
+  width: 250px;
+  height: 250px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  border-radius: 30px;
+}
+body main .armatuindoor .timer .timer1 .descripcionfoto {
+  font-size: 30px;
+  background-color: white;
+  color: black;
+  border-radius: 30px;
+  padding: 5px;
+  text-align: center;
+}
+body main .armatuindoor .timer .timer1 .separador {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+body main .armatuindoor .timer .timer1 .separador .precio {
+  font-size: 30px;
+  padding: 8px;
+  color: black;
+  background-color: white;
+  border-radius: 30px;
+}
+body main .armatuindoor .timer .timer1 .separador .iralaimg {
+  font-size: 30px;
+  color: white;
+  background-color: #4943de;
+  height: 40px;
+  width: 100px;
+  border-radius: 30px;
+  margin: 5px;
+}
+body main .armatuindoor .timer .timer2 {
+  background-image: url(../Img/Galaxiaa.jpg);
+  grid-area: timer2;
+  width: 300px;
+  height: 450px;
+  text-decoration: none;
+  font-size: 30px;
+  text-align: center;
+  border-radius: 20px;
+}
+body main .armatuindoor .timer .timer2 img {
+  width: 250px;
+  height: 250px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  border-radius: 30px;
+}
+body main .armatuindoor .timer .timer2 .descripcionfoto {
+  font-size: 30px;
+  background-color: white;
+  color: black;
+  border-radius: 30px;
+  padding: 5px;
+  text-align: center;
+}
+body main .armatuindoor .timer .timer2 .separador {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+body main .armatuindoor .timer .timer2 .separador .precio {
+  font-size: 30px;
+  padding: 8px;
+  color: black;
+  background-color: white;
+  border-radius: 30px;
+}
+body main .armatuindoor .timer .timer2 .separador .iralaimg {
+  font-size: 30px;
+  color: white;
+  background-color: #4943de;
+  height: 40px;
+  width: 100px;
+  border-radius: 30px;
+  margin: 5px;
+}
+body main .armatuindoor .timer .timer3 {
+  background-image: url(../Img/Galaxiaa.jpg);
+  grid-area: timer3;
+  width: 300px;
+  height: 450px;
+  text-decoration: none;
+  font-size: 30px;
+  text-align: center;
+  border-radius: 20px;
+}
+body main .armatuindoor .timer .timer3 img {
+  width: 250px;
+  height: 250px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  border-radius: 30px;
+}
+body main .armatuindoor .timer .timer3 .descripcionfoto {
+  font-size: 30px;
+  background-color: white;
+  color: black;
+  border-radius: 30px;
+  padding: 5px;
+  text-align: center;
+}
+body main .armatuindoor .timer .timer3 .separador {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+body main .armatuindoor .timer .timer3 .separador .precio {
+  font-size: 30px;
+  padding: 8px;
+  color: black;
+  background-color: white;
+  border-radius: 30px;
+}
+body main .armatuindoor .timer .timer3 .separador .iralaimg {
+  font-size: 30px;
+  color: white;
+  background-color: #4943de;
+  height: 40px;
+  width: 100px;
+  border-radius: 30px;
+  margin: 5px;
+}
+body main .armatuindoor .potencia {
+  width: 100%;
+  height: auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+  grid-template-areas: "potencia1 potencia2 potencia3";
+  padding: 30px;
+  gap: 30px;
+}
+body main .armatuindoor .potencia .potencia1 {
+  background-image: url(../Img/Galaxiaa.jpg);
+  grid-area: potencia1;
+  width: 300px;
+  height: 450px;
+  text-decoration: none;
+  font-size: 30px;
+  text-align: center;
+  border-radius: 20px;
+}
+body main .armatuindoor .potencia .potencia1 img {
+  width: 250px;
+  height: 250px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  border-radius: 30px;
+}
+body main .armatuindoor .potencia .potencia1 .descripcionfoto {
+  font-size: 30px;
+  background-color: white;
+  color: black;
+  border-radius: 30px;
+  padding: 5px;
+  text-align: center;
+}
+body main .armatuindoor .potencia .potencia1 .separador {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+body main .armatuindoor .potencia .potencia1 .separador .precio {
+  font-size: 30px;
+  padding: 8px;
+  color: black;
+  background-color: white;
+  border-radius: 30px;
+}
+body main .armatuindoor .potencia .potencia1 .separador .iralaimg {
+  font-size: 30px;
+  color: white;
+  background-color: #4943de;
+  height: 40px;
+  width: 100px;
+  border-radius: 30px;
+  margin: 5px;
+}
+body main .armatuindoor .potencia .potencia2 {
+  background-image: url(../Img/Galaxiaa.jpg);
+  grid-area: potencia2;
+  width: 300px;
+  height: 450px;
+  text-decoration: none;
+  font-size: 30px;
+  text-align: center;
+  border-radius: 20px;
+}
+body main .armatuindoor .potencia .potencia2 img {
+  width: 250px;
+  height: 250px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  border-radius: 30px;
+}
+body main .armatuindoor .potencia .potencia2 .descripcionfoto {
+  font-size: 30px;
+  background-color: white;
+  color: black;
+  border-radius: 30px;
+  padding: 5px;
+  text-align: center;
+}
+body main .armatuindoor .potencia .potencia2 .separador {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+body main .armatuindoor .potencia .potencia2 .separador .precio {
+  font-size: 30px;
+  padding: 8px;
+  color: black;
+  background-color: white;
+  border-radius: 30px;
+}
+body main .armatuindoor .potencia .potencia2 .separador .iralaimg {
+  font-size: 30px;
+  color: white;
+  background-color: #4943de;
+  height: 40px;
+  width: 100px;
+  border-radius: 30px;
+  margin: 5px;
+}
+body main .armatuindoor .potencia .potencia3 {
+  background-image: url(../Img/Galaxiaa.jpg);
+  grid-area: potencia3;
+  width: 300px;
+  height: 450px;
+  text-decoration: none;
+  font-size: 30px;
+  text-align: center;
+  border-radius: 20px;
+}
+body main .armatuindoor .potencia .potencia3 img {
+  width: 250px;
+  height: 250px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  border-radius: 30px;
+}
+body main .armatuindoor .potencia .potencia3 .descripcionfoto {
+  font-size: 30px;
+  background-color: white;
+  color: black;
+  border-radius: 30px;
+  padding: 5px;
+  text-align: center;
+}
+body main .armatuindoor .potencia .potencia3 .separador {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+body main .armatuindoor .potencia .potencia3 .separador .precio {
+  font-size: 30px;
+  padding: 8px;
+  color: black;
+  background-color: white;
+  border-radius: 30px;
+}
+body main .armatuindoor .potencia .potencia3 .separador .iralaimg {
+  font-size: 30px;
+  color: white;
+  background-color: #4943de;
+  height: 40px;
+  width: 100px;
+  border-radius: 30px;
+  margin: 5px;
+}
+body main .nosotros {
+  width: 100%;
+}
+body main .nosotros h2 {
+  height: 50px;
+}
+body main .nosotros p {
+  margin: auto;
+  height: auto;
+  width: 1000px;
+  font-size: 30px;
+}
+body main .nosotros {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 150px 1fr;
+  grid-template-areas: "h2" "p";
+}
+body main .nosotros h2 {
+  grid-area: h2;
+}
+body main .nosotros p {
+  background-image: radial-gradient(circle, #7b75ff, #8768e5, #8d5ccc, #8d51b4, #8a489d, #834090, #7c3884, #753178, #6c2871, #621f6b, #591564, #4f095e);
+  border: #350441 3px solid;
+  border-radius: 100px;
+  width: 1100px;
+  text-align: center;
+  margin: auto;
+  padding: 15px;
+  grid-area: p;
+}
+body main .nosotro {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas: "h3" "p";
+}
+body main .nosotro .equipo {
+  grid-area: h3;
+  color: #753178;
+  padding: 20px;
+  background-color: white;
+  border-radius: 100px;
+  justify-content: center;
+  margin: auto;
+  gap: 50px;
+  width: max-content;
+}
+body main .nosotro ul {
+  grid-area: p;
+}
+body main .nosotro ul li {
+  background-image: radial-gradient(circle, #7b75ff, #8768e5, #8d5ccc, #8d51b4, #8a489d, #834090, #7c3884, #753178, #6c2871, #621f6b, #591564, #4f095e);
+  border: #350441 3px solid;
+  border-radius: 100px;
+  width: max-content;
+  text-align: center;
+  margin: auto;
+  font-size: 20px;
+  padding: 30px;
+  display: flex;
+  font-style: none;
+  flex-direction: row;
+}
+body main .nosotro .objetivo {
+  background-image: radial-gradient(circle, #7b75ff, #8768e5, #8d5ccc, #8d51b4, #8a489d, #834090, #7c3884, #753178, #6c2871, #621f6b, #591564, #4f095e);
+  border: #350441 3px solid;
+  border-radius: 100px;
+  width: 400px;
+  text-align: center;
+  margin: auto;
+  font-size: 20px;
+  padding: 30px;
+  display: flex;
+  font-style: none;
+  flex-direction: row;
+}
+body main .nosotro div {
+  display: flex;
+  justify-content: space-between;
+}
+body main .nosotro div p {
+  grid-area: p;
+  background-image: radial-gradient(circle, #7b75ff, #8768e5, #8d5ccc, #8d51b4, #8a489d, #834090, #7c3884, #753178, #6c2871, #621f6b, #591564, #4f095e);
+  border: #350441 3px solid;
+  border-radius: 100px;
+  width: max-content;
+  font-size: 20px;
+  margin: 50px;
+  padding: 10px;
+}
+body footer .footer {
+  width: 100%;
+  height: 300px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+  grid-template-areas: "imgfooter footer1 footer2 footer3";
+  background-color: #145e09;
+}
+body footer .footer .imagenfooter {
+  grid-area: imgfooter;
+  width: auto;
+  height: 300px;
+  justify-self: center;
+}
+body footer .footer .imagenfooter img {
+  width: 200px;
+  height: 200px;
+  background-color: beige;
+  margin-top: 50px;
+}
+body footer .footer .footer0 {
+  grid-area: footer1;
+  height: 300px;
+  width: auto;
+  justify-self: center;
+}
+body footer .footer .footer0 .footer1 {
+  margin-top: 5px;
+  line-height: 30px;
+  display: flex;
+  flex-direction: column;
+}
+body footer .footer .footer0 .pfooter {
+  margin-top: 50px;
+  font-size: 40px;
+  color: burlywood;
+}
+body footer .footer .footer0 a {
+  font-size: 25px;
+  text-decoration: none;
+  color: white;
+}
+body footer .footer .footer2 {
+  grid-area: footer2;
+  width: auto;
+  height: 300px;
+  justify-self: center;
+  line-height: 35px;
+  padding-top: 60px;
+  font-size: 25px;
+  color: white;
+}
+body footer .footer .footer2 a {
+  color: white;
+  text-decoration: none;
+}
+body footer .footer .footer2 a img {
+  height: 25px;
+  width: 25px;
+  border-radius: 30px;
+}
+body footer .footer .footer2 .contactos {
+  font-size: 25px;
+  color: white;
+}
+body footer .footer .footer2 .footerr {
+  padding-bottom: 8px;
+}
+body footer .footer .footer2 .footerr p {
+  font-size: 40px;
+  color: burlywood;
+}
+body footer .footer .footer3 {
+  grid-area: footer3;
+  width: auto;
+  height: 300px;
+  justify-self: center;
+  padding-top: 50px;
+}
+body footer .footer .footer3 .pfooter {
+  font-size: 40px;
+  color: burlywood;
+}
+body footer .footer .footer3 a {
+  display: flex;
+  padding: 5px;
+}
+body footer .footer .footer3 a img {
+  width: 35px;
+  height: 35px;
+}
+
+@media (max-width: 1024px) {
+  body main .primerdiv {
+    width: auto;
+    height: 500px;
+  }
+  body main .primerdiv div {
+    margin: auto;
+    background-position: center;
+    width: auto;
+    height: 400px;
+  }
+  body main .primerdiv div a {
+    width: 300px;
+    height: 400px;
+  }
+  body main .primerdiv div a .h4 {
+    font-size: 23px;
+    width: 150px;
+  }
+  body main .primerdiv div a h4 {
+    font-size: 23px;
+  }
+  body main .primerdiv div a img {
+    width: 200px;
+    height: 200px;
+    justify-content: center;
+  }
+  body main .primerdiv div a p {
+    font-size: 15px;
+  }
+  body main .armatuindoor .iluminacion {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: "iluminacion1 iluminacion2" "iluminacion3 iluminacion4";
+  }
+  body main .armatuindoor .ventilacion {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: "ventilacion1 ventilacion2" "ventilacion3 ventilacion4";
+  }
+  body .ns {
+    width: 100%;
+  }
+  body .ns .nosotros {
+    width: 100%;
+    height: 500px;
+    grid-template-columns: 1fr;
+    grid-template-rows: 150px 1fr;
+    grid-template-areas: "h2" "p";
+  }
+  body .ns .nosotros p {
+    font-size: 30px;
+    height: 250px;
+    width: 900px;
+    padding-top: 45px;
+  }
+  body .ns .nosotro div {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 150px 150px;
+    grid-template-areas: "p1 p2" "p3 p4";
+  }
+  body .ns .nosotro div .p1 {
+    grid-area: p1;
+    width: max-content;
+    margin: auto;
+  }
+  body .ns .nosotro div .p2 {
+    grid-area: p2;
+    width: max-content;
+    margin: auto;
+  }
+  body .ns .nosotro div .p3 {
+    grid-area: p3;
+    width: max-content;
+    margin: auto;
+  }
+  body .ns .nosotro div .p4 {
+    grid-area: p4;
+    width: max-content;
+    margin: auto;
+  }
+  body .main h2 {
+    font-size: 40px;
+  }
+  body .main .parafernalia {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas: "para1 para2" "para3 para4" "para5 para6";
+  }
+  body footer .footer {
+    padding-top: 0px;
+    height: 250px;
+  }
+  body footer .footer .imagenfooter {
+    height: 200px;
+    width: 200px;
+    grid-area: imgfooter;
+  }
+  body footer .footer .imagenfooter img {
+    height: 200px;
+    margin-top: 25px;
+  }
+  body footer .footer .footer0 {
+    height: 200px;
+    width: auto;
+  }
+  body footer .footer .footer0 .pfooter {
+    font-size: 40px;
+  }
+  body footer .footer .footer0 div a {
+    font-size: 25px;
+  }
+  body footer .footer .footer2 {
+    height: 200px;
+    width: auto;
+  }
+  body footer .footer .footer2 .footerr p {
+    font-size: 40px;
+  }
+  body footer .footer .footer2 .contactos {
+    font-size: 20px;
+  }
+  body footer .footer .footer2 a {
+    font-size: 23px;
+  }
+  body footer .footer .footer2 a img {
+    width: 20px;
+    height: 20px;
+  }
+  body footer .footer .footer2 .pfooter2 {
+    font-size: 23px;
+    line-height: 20px;
+  }
+  body footer .footer .footer3 {
+    height: 200px;
+    width: auto;
+  }
+  body footer .footer .footer3 .pfooter {
+    font-size: 40px;
+  }
+}
+@media (max-width: 768px) {
+  body header {
+    width: 100%;
+    height: auto;
+  }
+  body header .sect {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 50px 1fr;
+    grid-template-areas: "a input" "div div";
+  }
+  body header .sect img {
+    grid-area: a;
+  }
+  body header .sect .search {
+    grid-area: input;
+  }
+  body header .sect .contactos {
+    grid-area: div;
+    justify-self: center;
+  }
+  body header section {
+    width: auto;
+    display: grid;
+    grid-template-columns: 50px 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: "img input" "div div";
+  }
+  body header section .search {
+    padding-left: 0px;
+    margin-left: 0px;
+  }
+  body header section .contactos {
+    grid-area: div;
+    display: flex;
+    justify-content: space-between;
+  }
+  body .header {
+    height: 200px;
+  }
+  body .header section {
+    grid-template-rows: 100px 50px;
+  }
+  body main {
+    width: 100%;
+    height: auto;
+  }
+  body main h2 {
+    font-size: 60px;
+    color: rgb(134, 114, 114);
+    color: white;
+  }
+  body main .primerdiv {
+    width: 100%;
+    height: auto;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas: "primerdiv1" "primerdiv2" "primerdiv3";
+    gap: 20px;
+  }
+  body main .primerdiv .primerdiv1 {
+    grid-area: primerdiv1;
+  }
+  body main .primerdiv .primerdiv2 {
+    grid-area: primerdiv2;
+  }
+  body main .primerdiv .primerdiv3 {
+    grid-area: primerdiv3;
+  }
+  body main .semas {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-areas: "sema1 sema2" "sema3 sema4" "sema5 sema6" "sema7 sema8";
+  }
+  body main h3 {
+    margin: auto;
+    padding: 20px;
+    font-size: 60px;
+  }
+  body main .foto {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-areas: "foto1 foto2" "foto3 foto4" "foto5 foto6" "foto7 foto8";
+  }
+  body main .cbd {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-areas: "cbd1 cbd2" "cbd3 cbd4" "cbd5 cbd6" "cbd7 cbd8";
+  }
+  body main .armatuindoor {
+    width: 100%;
+  }
+  body main .armatuindoor .h3 {
+    font-size: 50px;
+    width: auto;
+    margin: auto;
+  }
+  body main .armatuindoor .carpas {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 100px 1fr 1fr;
+    grid-template-areas: "h3 h3" "carpa1 carpa2" "carpa3 carpa3";
+  }
+  body main .armatuindoor .carpas .carpa1 {
+    padding-top: 0px;
+  }
+  body main .armatuindoor .carpas .h3 {
+    font-size: 50px;
+    width: auto;
+    margin: auto;
+  }
+  body main .armatuindoor .timer {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: "timer1 timer2" "timer3 timer3";
+  }
+  body .ns .nosotros {
+    height: 400px;
+  }
+  body .ns .nosotros p {
+    margin-top: 0px;
+    width: 500px;
+    font-size: 20px;
+  }
+  body .ns .nosotro {
+    height: 400px;
+  }
+  body .ns .nosotro .equipo {
+    height: 100px;
+  }
+  body .ns .nosotro div {
+    margin-top: 0px;
+  }
+  body .main .parafernalia .para1 {
+    width: 300px;
+    height: 300px;
+  }
+  body .main .parafernalia .para1 p {
+    font-size: 25px;
+    width: 150px;
+  }
+  body .main .parafernalia .para1 img {
+    width: 250px;
+    height: 250px;
+  }
+  body .main .parafernalia .para2 {
+    width: 300px;
+    height: 300px;
+  }
+  body .main .parafernalia .para2 p {
+    font-size: 25px;
+    width: 150px;
+  }
+  body .main .parafernalia .para2 img {
+    width: 250px;
+    height: 250px;
+  }
+  body .main .parafernalia .para3 {
+    width: 300px;
+    height: 300px;
+  }
+  body .main .parafernalia .para3 p {
+    font-size: 25px;
+    width: 150px;
+  }
+  body .main .parafernalia .para3 img {
+    width: 250px;
+    height: 250px;
+  }
+  body .main .parafernalia .para4 {
+    width: 300px;
+    height: 300px;
+  }
+  body .main .parafernalia .para4 p {
+    font-size: 25px;
+    width: 150px;
+  }
+  body .main .parafernalia .para4 img {
+    width: 250px;
+    height: 250px;
+  }
+  body .main .parafernalia .para5 {
+    width: 300px;
+    height: 300px;
+  }
+  body .main .parafernalia .para5 p {
+    font-size: 25px;
+    width: 150px;
+  }
+  body .main .parafernalia .para5 img {
+    width: 250px;
+    height: 250px;
+  }
+  body .main .parafernalia .para6 {
+    width: 300px;
+    height: 300px;
+  }
+  body .main .parafernalia .para6 p {
+    font-size: 25px;
+    width: 150px;
+  }
+  body .main .parafernalia .para6 img {
+    width: 250px;
+    height: 250px;
+  }
+  body footer .footer {
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas: "footer1 footer2 footer3";
+  }
+  body footer .imagenfooter {
+    display: none;
+  }
+}
+@media (max-width: 425px) {
+  body {
+    width: 100%;
+  }
+  body .header {
+    width: 100%;
+    height: 200px;
+  }
+  body header {
+    width: 100%;
+    height: 100px;
+  }
+  body header .sect {
+    width: 100%;
+    height: 100px;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: "input" "div";
+  }
+  body header .sect .img {
+    display: none;
+  }
+  body header .sect .search {
+    margin: auto;
+    height: 50px;
+  }
+  body header .sect .contactos {
+    display: flex;
+    margin: auto;
+    height: 50px;
+    padding: 0px;
+  }
+  body header .sect .contactos li {
+    width: 70px;
+    margin: 15px;
+  }
+  body header section {
+    width: auto;
+    height: 200px;
+    grid-template-columns: 1fr;
+    grid-template-rows: 80px 1fr 1fr;
+    grid-template-areas: "img" "input" "div";
+  }
+  body header section a {
+    width: 100%;
+    height: auto;
+    justify-content: center;
+  }
+  body header section a img {
+    width: 100px;
+    height: 80px;
+    margin-left: 0px;
+  }
+  body header section .search {
+    margin: auto;
+    height: 50px;
+    margin: 0px;
+  }
+  body header section .contactos {
+    margin: auto;
+    height: 50px;
+    padding: 0px;
+  }
+  body header section .contactos li {
+    width: 70px;
+    margin: 15px;
+  }
+  body .ns {
+    width: 100%;
+  }
+  body .ns .nosotros {
+    width: 100%;
+    height: auto;
+  }
+  body .ns .nosotros p {
+    width: 350px;
+    height: 300px;
+  }
+  body .ns .nosotro .equipo {
+    font-size: 40px;
+  }
+  body .ns .nosotro div {
+    height: 300px;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-areas: "p1" "p2" "p3" "p4";
+  }
+  body .ns .nosotro div .p1 {
+    margin: 20px auto;
+  }
+  body .main .parafernalia {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-areas: "para1" "para2" "para3" "para4" "para5" "para6";
+  }
+  body main h1 {
+    font-size: 50px;
+    gap: 10px;
+  }
+  body main .semas {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-areas: "sema1" "sema2" "sema3" "sema4" "sema5" "sema6" "sema7" "sema8";
+  }
+  body main .foto {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-areas: "foto1" "foto2" "foto3" "foto4" "foto5" "foto6" "foto7" "foto8" "foto9";
+  }
+  body main .cbd {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-areas: "cbd1" "cbd2" "cbd3" "cbd4" "cbd5" "cbd6" "cbd7" "cbd8" "cbd9";
+  }
+  body main .armatuindoor .carpas {
+    grid-template-columns: 1fr;
+    grid-template-rows: 100px 1fr 1fr 1fr;
+    grid-template-areas: "h3" "carpa1" "carpa2" "carpa3";
+  }
+  body main .armatuindoor .carpas .h3 {
+    font-size: 35px;
+    text-align: center;
+  }
+  body main .armatuindoor .carpas .carpa1 {
+    width: 250px;
+    height: 350px;
+  }
+  body main .armatuindoor .carpas .carpa1 img {
+    width: 200px;
+    height: 200px;
+  }
+  body main .armatuindoor .carpas .carpa1 .descripcionfoto {
+    padding-top: 0px;
+    font-size: 20px;
+  }
+  body main .armatuindoor .carpas .carpa1 .separador {
+    padding-top: 0px;
+    margin-top: 10px;
+  }
+  body main .armatuindoor .carpas .carpa1 .separador .precio {
+    font-size: 20px;
+    width: auto;
+    height: 40px;
+  }
+  body main .armatuindoor .carpas .carpa1 .separador .iralaimg {
+    font-size: 20px;
+    width: 50px;
+    padding: 5px;
+    margin-top: 0px;
+    padding-left: 10px;
+  }
+  body main .armatuindoor .carpas .carpa2 {
+    width: 250px;
+    height: 350px;
+  }
+  body main .armatuindoor .carpas .carpa2 img {
+    width: 200px;
+    height: 200px;
+  }
+  body main .armatuindoor .carpas .carpa2 .descripcionfoto {
+    font-size: 20px;
+    padding-top: 0px;
+  }
+  body main .armatuindoor .carpas .carpa2 .separador {
+    padding-top: 0px;
+    margin-top: 10px;
+  }
+  body main .armatuindoor .carpas .carpa2 .separador .precio {
+    font-size: 20px;
+    width: auto;
+    height: 40px;
+  }
+  body main .armatuindoor .carpas .carpa2 .separador .iralaimg {
+    font-size: 20px;
+    width: 50px;
+    padding: 5px;
+    margin-top: 0px;
+    padding-left: 10px;
+  }
+  body main .armatuindoor .carpas .carpa3 {
+    width: 250px;
+    height: 350px;
+  }
+  body main .armatuindoor .carpas .carpa3 img {
+    width: 200px;
+    height: 200px;
+  }
+  body main .armatuindoor .carpas .carpa3 .descripcionfoto {
+    font-size: 20px;
+    padding-top: 0px;
+  }
+  body main .armatuindoor .carpas .carpa3 .separador {
+    padding-top: 0px;
+    margin-top: 10px;
+  }
+  body main .armatuindoor .carpas .carpa3 .separador .precio {
+    font-size: 20px;
+    width: auto;
+    height: 40px;
+  }
+  body main .armatuindoor .carpas .carpa3 .separador .iralaimg {
+    font-size: 20px;
+    width: 50px;
+    padding: 5px;
+    margin-top: 0px;
+    padding-left: 10px;
+  }
+  body main .armatuindoor .h3 {
+    font-size: 30px;
+    text-align: center;
+    width: 300px;
+    height: auto;
+    align-content: center;
+  }
+  body main .armatuindoor .h3ventilacion {
+    font-size: 40px;
+    text-align: center;
+    width: 230px;
+    height: auto;
+  }
+  body main .armatuindoor .iluminacion {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-areas: "iluminacion1" "iluminacion2" "iluminacion3" "iluminacion4";
+  }
+  body main .armatuindoor .iluminacion .iluminacion1 {
+    width: 250px;
+    height: 350px;
+  }
+  body main .armatuindoor .iluminacion .iluminacion1 img {
+    width: 200px;
+    height: 200px;
+  }
+  body main .armatuindoor .iluminacion .iluminacion1 .descripcionfoto {
+    font-size: 20px;
+    padding-top: 0px;
+  }
+  body main .armatuindoor .iluminacion .iluminacion1 .separador {
+    padding-top: 0px;
+    margin-top: 5px;
+  }
+  body main .armatuindoor .iluminacion .iluminacion1 .separador .precio {
+    font-size: 20px;
+    width: auto;
+    height: 40px;
+  }
+  body main .armatuindoor .iluminacion .iluminacion1 .separador .iralaimg {
+    font-size: 20px;
+    width: 50px;
+    padding: 5px;
+    margin-top: 0px;
+    padding-left: 0px;
+  }
+  body main .armatuindoor .iluminacion .iluminacion2 {
+    width: 250px;
+    height: 350px;
+  }
+  body main .armatuindoor .iluminacion .iluminacion2 img {
+    width: 200px;
+    height: 200px;
+  }
+  body main .armatuindoor .iluminacion .iluminacion2 .descripcionfoto {
+    font-size: 20px;
+    padding-top: 0px;
+  }
+  body main .armatuindoor .iluminacion .iluminacion2 .separador {
+    padding-top: 0px;
+    margin-top: 5px;
+  }
+  body main .armatuindoor .iluminacion .iluminacion2 .separador .precio {
+    font-size: 20px;
+    width: auto;
+    height: 40px;
+  }
+  body main .armatuindoor .iluminacion .iluminacion2 .separador .iralaimg {
+    font-size: 20px;
+    width: 50px;
+    padding: 5px;
+    margin-top: 0px;
+    padding-left: 0px;
+  }
+  body main .armatuindoor .iluminacion .iluminacion3 {
+    width: 250px;
+    height: 350px;
+  }
+  body main .armatuindoor .iluminacion .iluminacion3 img {
+    width: 200px;
+    height: 200px;
+  }
+  body main .armatuindoor .iluminacion .iluminacion3 .descripcionfoto {
+    font-size: 20px;
+    padding-top: 0px;
+  }
+  body main .armatuindoor .iluminacion .iluminacion3 .separador {
+    padding-top: 0px;
+    margin-top: 5px;
+  }
+  body main .armatuindoor .iluminacion .iluminacion3 .separador .precio {
+    font-size: 20px;
+    width: auto;
+    height: 40px;
+  }
+  body main .armatuindoor .iluminacion .iluminacion3 .separador .iralaimg {
+    font-size: 20px;
+    width: 50px;
+    padding: 5px;
+    margin-top: 0px;
+    padding-left: 0px;
+  }
+  body main .armatuindoor .iluminacion .iluminacion4 {
+    width: 250px;
+    height: 350px;
+  }
+  body main .armatuindoor .iluminacion .iluminacion4 img {
+    width: 200px;
+    height: 200px;
+  }
+  body main .armatuindoor .iluminacion .iluminacion4 .descripcionfoto {
+    font-size: 20px;
+    padding-top: 0px;
+  }
+  body main .armatuindoor .iluminacion .iluminacion4 .separador {
+    padding-top: 0px;
+    margin-top: 5px;
+  }
+  body main .armatuindoor .iluminacion .iluminacion4 .separador .precio {
+    font-size: 20px;
+    width: auto;
+    height: 40px;
+  }
+  body main .armatuindoor .iluminacion .iluminacion4 .separador .iralaimg {
+    font-size: 20px;
+    width: 50px;
+    padding: 5px;
+    margin-top: 0px;
+    padding-left: 0px;
+  }
+  body main .armatuindoor .ventilacion {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-areas: "ventilacion1" "ventilacion2" "ventilacion3" "ventilacion4";
+  }
+  body main .armatuindoor .ventilacion .ventilacion1 {
+    width: 250px;
+    height: 350px;
+  }
+  body main .armatuindoor .ventilacion .ventilacion1 img {
+    width: 200px;
+    height: 200px;
+  }
+  body main .armatuindoor .ventilacion .ventilacion1 .descripcionfoto {
+    font-size: 20px;
+    padding-top: 0px;
+  }
+  body main .armatuindoor .ventilacion .ventilacion1 .separador {
+    padding-top: 0px;
+    margin-top: 5px;
+  }
+  body main .armatuindoor .ventilacion .ventilacion1 .separador .precio {
+    font-size: 20px;
+    width: auto;
+    height: 40px;
+  }
+  body main .armatuindoor .ventilacion .ventilacion1 .separador .iralaimg {
+    font-size: 20px;
+    width: 50px;
+    padding: 5px;
+    margin-top: 0px;
+    padding-left: 0px;
+  }
+  body main .armatuindoor .ventilacion .ventilacion2 {
+    width: 250px;
+    height: 350px;
+  }
+  body main .armatuindoor .ventilacion .ventilacion2 img {
+    width: 200px;
+    height: 200px;
+  }
+  body main .armatuindoor .ventilacion .ventilacion2 .descripcionfoto {
+    font-size: 20px;
+    padding-top: 0px;
+  }
+  body main .armatuindoor .ventilacion .ventilacion2 .separador {
+    padding-top: 0px;
+    margin-top: 5px;
+  }
+  body main .armatuindoor .ventilacion .ventilacion2 .separador .precio {
+    font-size: 20px;
+    width: auto;
+    height: 40px;
+  }
+  body main .armatuindoor .ventilacion .ventilacion2 .separador .iralaimg {
+    font-size: 20px;
+    width: 50px;
+    padding: 5px;
+    margin-top: 0px;
+    padding-left: 0px;
+  }
+  body main .armatuindoor .ventilacion .ventilacion3 {
+    width: 250px;
+    height: 350px;
+  }
+  body main .armatuindoor .ventilacion .ventilacion3 img {
+    width: 200px;
+    height: 200px;
+  }
+  body main .armatuindoor .ventilacion .ventilacion3 .descripcionfoto {
+    font-size: 20px;
+    padding-top: 0px;
+  }
+  body main .armatuindoor .ventilacion .ventilacion3 .separador {
+    padding-top: 0px;
+    margin-top: 5px;
+  }
+  body main .armatuindoor .ventilacion .ventilacion3 .separador .precio {
+    font-size: 20px;
+    width: auto;
+    height: 40px;
+  }
+  body main .armatuindoor .ventilacion .ventilacion3 .separador .iralaimg {
+    font-size: 20px;
+    width: 50px;
+    padding: 5px;
+    margin-top: 0px;
+    padding-left: 0px;
+  }
+  body main .armatuindoor .ventilacion .ventilacion4 {
+    width: 250px;
+    height: 350px;
+  }
+  body main .armatuindoor .ventilacion .ventilacion4 img {
+    width: 200px;
+    height: 200px;
+  }
+  body main .armatuindoor .ventilacion .ventilacion4 .descripcionfoto {
+    font-size: 20px;
+    padding-top: 0px;
+  }
+  body main .armatuindoor .ventilacion .ventilacion4 .separador {
+    padding-top: 0px;
+    margin-top: 5px;
+  }
+  body main .armatuindoor .ventilacion .ventilacion4 .separador .precio {
+    font-size: 20px;
+    width: auto;
+    height: 40px;
+  }
+  body main .armatuindoor .ventilacion .ventilacion4 .separador .iralaimg {
+    font-size: 20px;
+    width: 50px;
+    padding: 5px;
+    margin-top: 0px;
+    padding-left: 0px;
+  }
+  body main .armatuindoor .timer {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas: "timer1" "timer2" "timer3 ";
+  }
+  body main .armatuindoor .timer .timer1 {
+    width: 250px;
+    height: 350px;
+  }
+  body main .armatuindoor .timer .timer1 img {
+    width: 200px;
+    height: 200px;
+  }
+  body main .armatuindoor .timer .timer1 .descripcionfoto {
+    font-size: 20px;
+    padding-top: 0px;
+  }
+  body main .armatuindoor .timer .timer1 .separador {
+    padding-top: 0px;
+    margin-top: 5px;
+  }
+  body main .armatuindoor .timer .timer1 .separador .precio {
+    font-size: 20px;
+    width: auto;
+    height: 40px;
+  }
+  body main .armatuindoor .timer .timer1 .separador .iralaimg {
+    font-size: 20px;
+    width: 50px;
+    padding: 5px;
+    margin-top: 0px;
+    padding-left: 0px;
+  }
+  body main .armatuindoor .timer .timer2 {
+    width: 250px;
+    height: 350px;
+  }
+  body main .armatuindoor .timer .timer2 img {
+    width: 200px;
+    height: 200px;
+  }
+  body main .armatuindoor .timer .timer2 .descripcionfoto {
+    font-size: 20px;
+    padding-top: 0px;
+  }
+  body main .armatuindoor .timer .timer2 .separador {
+    padding-top: 0px;
+    margin-top: 5px;
+  }
+  body main .armatuindoor .timer .timer2 .separador .precio {
+    font-size: 20px;
+    width: auto;
+    height: 40px;
+  }
+  body main .armatuindoor .timer .timer2 .separador .iralaimg {
+    font-size: 20px;
+    width: 50px;
+    padding: 5px;
+    margin-top: 0px;
+    padding-left: 0px;
+  }
+  body main .armatuindoor .timer .timer3 {
+    width: 250px;
+    height: 350px;
+  }
+  body main .armatuindoor .timer .timer3 img {
+    width: 200px;
+    height: 200px;
+  }
+  body main .armatuindoor .timer .timer3 .descripcionfoto {
+    font-size: 20px;
+    padding-top: 0px;
+  }
+  body main .armatuindoor .timer .timer3 .separador {
+    padding-top: 0px;
+    margin-top: 5px;
+  }
+  body main .armatuindoor .timer .timer3 .separador .precio {
+    font-size: 20px;
+    width: auto;
+    height: 40px;
+  }
+  body main .armatuindoor .timer .timer3 .separador .iralaimg {
+    font-size: 20px;
+    width: 50px;
+    padding: 5px;
+    margin-top: 0px;
+    padding-left: 0px;
+  }
+  body footer {
+    height: 150px;
+  }
+  body footer .footer {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: "footer1 footer2 footer3";
+  }
+  body footer .footer .footer0 {
+    height: 150px;
+  }
+  body footer .footer .footer0 .pfooter {
+    font-size: 25px;
+  }
+  body footer .footer .footer0 .footer1 a {
+    font-size: 15px;
+  }
+  body footer .footer .footer2 {
+    height: 150px;
+    padding-top: 50px;
+    justify-content: center;
+  }
+  body footer .footer .footer2 .footerr p {
+    font-size: 25px;
+    margin-bottom: 0px;
+  }
+  body footer .footer .footer2 .contactos {
+    font-size: 15px;
+  }
+  body footer .footer .footer2 a {
+    font-size: 15px;
+  }
+  body footer .footer .footer2 .pfooter2 {
+    font-size: 15px;
+  }
+  body footer .footer .footer3 {
+    height: 150px;
+    padding-top: 55px;
+  }
+  body footer .footer .footer3 .pfooter {
+    font-size: 25px;
+    display: flex;
+    justify-content: center;
+  }
+  body footer .footer .footer3 div {
+    display: flex;
+  }
+}
+@media (max-width: 375px) {
+  body .header {
+    height: 80px;
+  }
+  body header {
+    width: 100%;
+    height: 100px;
+  }
+  body header .sect {
+    width: 100%;
+    height: 100px;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: "input" "div";
+  }
+  body header .sect .search {
+    width: 100px;
+  }
+  body header .sect .contactos {
+    width: 300px;
+    justify-content: center;
+    margin-left: 0px;
+    padding: 0px;
+    margin: 0px;
+  }
+  body header .sect .contactos li {
+    width: 55px;
+  }
+  body header .sect .contactos li a {
+    font-size: 15px;
+  }
+  body header section {
+    width: 100%;
+    height: 100px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: "img input" "div div";
+  }
+  body header section a img {
+    width: 50px;
+    height: 50px;
+    margin-left: 0px;
+  }
+  body header section .search {
+    width: 100px;
+    margin-left: 0px;
+  }
+  body header section .contactos {
+    width: 300px;
+    justify-content: center;
+    padding: 1rem;
+  }
+  body header section .contactos li {
+    width: 55px;
+  }
+  body header section .contactos li a {
+    font-size: 15px;
+  }
+  body main h2 {
+    font-size: 40px;
+  }
+  body main h3 {
+    font-size: 35px;
+    padding-top: 10px;
+  }
+  body main .semas {
+    padding-top: 0px;
+  }
+  body main .primerdiv .primerdiv1 {
+    width: 250px;
+    height: 350px;
+    margin-top: 0px;
+  }
+  body main .primerdiv .primerdiv1 a .h4 {
+    font-size: 20px;
+    justify-content: center;
+    margin: auto;
+    margin-top: 10px;
+  }
+  body main .primerdiv .primerdiv1 a img {
+    width: 200px;
+    height: 200px;
+    margin-right: 40px;
+  }
+  body main .primerdiv .primerdiv1 a p {
+    font-size: 15px;
+    width: 200px;
+    margin: auto;
+  }
+  body main .primerdiv .primerdiv2 {
+    width: 250px;
+    height: 350px;
+    margin-top: 0px;
+  }
+  body main .primerdiv .primerdiv2 a h4 {
+    width: 200px;
+    font-size: 20px;
+    justify-content: center;
+    margin: auto;
+    margin-top: 10px;
+  }
+  body main .primerdiv .primerdiv2 a img {
+    width: 200px;
+    height: 200px;
+    margin-right: 40px;
+  }
+  body main .primerdiv .primerdiv2 a p {
+    font-size: 15px;
+    width: 200px;
+    margin: auto;
+  }
+  body main .primerdiv .primerdiv3 {
+    width: 250px;
+    height: 350px;
+    margin-top: 0px;
+  }
+  body main .primerdiv .primerdiv3 a h4 {
+    width: 200px;
+    font-size: 20px;
+    justify-content: center;
+    margin: auto;
+    margin-top: 10px;
+  }
+  body main .primerdiv .primerdiv3 a img {
+    width: 200px;
+    height: 200px;
+    margin-right: 40px;
+  }
+  body main .primerdiv .primerdiv3 a p {
+    font-size: 15px;
+    width: 200px;
+    margin: auto;
+  }
+  body main .armatuindoor .carpas .h3 {
+    font-size: 30px;
+    height: 90px;
+  }
+  body main .armatuindoor .h3 {
+    font-size: 30px;
+    height: 90px;
+  }
+  body main .armatuindoor .h3ventilacion {
+    font-size: 30px;
+    height: 45px;
+    width: 160px;
+  }
+  body .ns .nosotro .objetivo {
+    width: 100%;
+  }
+  body .main h2 {
+    font-size: 30px;
+  }
+  body .main .parafernalia .para1 {
+    width: 250px;
+    height: 250px;
+  }
+  body .main .parafernalia .para1 img {
+    width: 200px;
+    height: 200px;
+  }
+  body .main .parafernalia .para2 {
+    width: 250px;
+    height: 250px;
+  }
+  body .main .parafernalia .para2 img {
+    width: 200px;
+    height: 200px;
+  }
+  body .main .parafernalia .para3 {
+    width: 250px;
+    height: 250px;
+  }
+  body .main .parafernalia .para3 img {
+    width: 200px;
+    height: 200px;
+  }
+  body .main .parafernalia .para4 {
+    width: 250px;
+    height: 250px;
+  }
+  body .main .parafernalia .para4 img {
+    width: 200px;
+    height: 200px;
+  }
+  body .main .parafernalia .para5 {
+    width: 250px;
+    height: 250px;
+  }
+  body .main .parafernalia .para5 img {
+    width: 200px;
+    height: 200px;
+  }
+  body .main .parafernalia .para6 {
+    width: 250px;
+    height: 250px;
+  }
+  body .main .parafernalia .para6 img {
+    width: 200px;
+    height: 200px;
+  }
+  body footer .footer {
+    height: auto;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 50px;
+    grid-template-areas: "footer1 footer2" "footer3 footer3";
+  }
+  body footer .footer .footer0 .pfooter {
+    height: auto;
+    margin-top: 10px;
+  }
+  body footer .footer .footer0 .footer1 {
+    margin: 0px;
+  }
+  body footer .footer .footer2 {
+    margin-top: 0px;
+    padding-top: 10px;
+  }
+  body footer .footer .footer2 p {
+    height: 25px;
+  }
+  body footer .footer .footer2 .footerr {
+    padding-top: 0px;
+    margin-top: 0px;
+  }
+  body footer .footer .footer3 {
+    height: 50px;
+    display: flex;
+    margin-top: 0px;
+    padding-top: 0px;
+  }
+  body footer .footer .footer3 .pfooter {
+    height: 40px;
+    margin-top: 0px;
+    margin: auto;
+  }
+  body footer .footer .footer3 div {
+    width: auto;
+    height: 40px;
+    margin-top: 0px;
+  }
+}
+@media (max-width: 375px) {
+  body .header section {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 50px 50px;
+  }
+  body .ns {
+    width: 100%;
+  }
+  body .ns .nosotros {
+    width: 100%;
+    grid-template-columns: 1fr;
+    grid-template-rows: 100px 1fr;
+  }
+  body .ns .nosotros h2 {
+    padding: 20px;
+  }
+  body .ns .nosotros p {
+    padding-top: 0px;
+    width: 280px;
+    height: auto;
+    padding: 20px;
+  }
+  body .ns .nosotro {
+    width: 100%;
+  }
+  body .ns .nosotro .equipo {
+    width: 280px;
+    font-size: 35px;
+    margin: auto 20px;
+  }
+  body .ns .nosotro ul li {
+    width: auto;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

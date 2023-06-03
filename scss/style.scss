@@ -1,0 +1,4112 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;}
+// extend
+.holder1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+//mixin
+@mixin para-cards($ancho, $alto, $margin, $border){
+    width: $ancho;
+    height: $alto;
+    margin: $margin;
+    border-radius: $border;
+}
+//variable
+$color-header:#145E09;
+body{
+    width: 100%;
+    height: auto;
+    
+    header{
+        width: 100%;
+    }
+        // header del parafernalia y demas
+        header{ 
+            width: 100%;
+            height: 100px;
+            background-color: $color-header;
+            
+            section{
+                display: grid;
+                grid-template-columns: 1fr 1fr 1fr;
+                grid-template-rows: 100px;
+                grid-template-areas: 
+                "a input div"
+                ;
+                img{
+                    margin-left: 50px;
+                    grid-area: a;
+                    width: 100px;
+                    height: 100px;
+                    border-radius: 100%;
+                }
+                a{
+                    img{
+                    margin-left: 50px;
+                    grid-area: a;
+                    width: 100px;
+                    height: 100px;
+                    border-radius: 100%;
+                }
+                }
+                .search{
+                    // display: flex;
+                    // justify-content: center;
+                    // align-items: center;
+                    @extend .holder1;
+                    input{
+                    grid-area: input;
+                    justify-content: center;
+                    width: 300px;
+                    height: 30px;
+                    border-radius: 5px;
+                    border: none;
+                }
+                img{
+                        @include para-cards(30px, 30px,0px , 5%);
+                    
+                    background-color: gray;
+                    align-content: center;
+                    
+                }
+            }
+            .contactos{
+                display: flex;
+                justify-content: end;
+                margin: 20px;
+                align-items: center;
+                li{                
+                    list-style: none;
+                    margin: 20px;
+                    background-color: white;
+                    border-radius: 5px;
+                    a{
+                        font-size: 20px;
+                    text-decoration: none;
+                    list-style: none;
+                    color:black ;
+                    padding: 0.5rem;
+                    }
+                }
+            }
+
+            }
+        a{
+            display: flex;
+        }
+        }
+        
+    main{
+        width: 100%;
+        height: auto;
+        background-image: radial-gradient(circle, #4943de, #6e41dd, #8a3fdb, #a23dd9, #b73bd6, #d614ae, #e40086, #e50061, #c4391c, #915400, #585e00, #145e09);    
+        // background-position: center;
+            h1{
+            display: flex;
+            justify-content: center;
+            font-size: 70px;
+            color: #03bb85;
+            font-family: 'Rubik Puddles', cursive;
+            
+        }
+            h3{
+                font-size: 45px;
+                display: flex;
+                justify-content: center;
+                color: #03bb85;
+
+            }
+            
+        .primerdiv{
+            display: flex;
+            justify-content:space-around;
+            padding-top: 40px;
+            padding-bottom: 60px;
+            div{
+                
+                background-image: url(../Img/fondiu.jpg);
+                    width: 400px;
+                    height: 550px;
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: space-around;
+                    border-radius: 20px;
+                a{
+                    text-decoration: none;
+                    color: white;
+                    width: 400px;
+                    height: 500px;
+                    h4{
+                    
+                    margin: 20px 50px 20px 50px;
+                    border-radius: 20px;
+                    display: flex;
+                    justify-content: center;
+                    font-family: 'Pacifico', cursive;
+                    font-size: 35px;
+                    
+                    color: #a4fff7;
+                    background-color: black;
+                    font-weight: 200;
+                }
+                    .h4{
+                        margin: 25px 90px 10px 90px;
+                        
+                    }
+                    img{
+                        width: 300px;
+                        height: 300px;
+                        background-color: white;
+                        margin:20px 30px 30px 50px;
+                        border-radius: 20px;
+                    }
+                    p{
+                        font-size: 20px;
+                        text-align: center;
+                        padding: 5px;
+                        background-color: black;
+                        border-radius: 20px;
+                        color: #03bb85;
+                    }
+                }
+            }
+        }
+
+        h2{
+            font-size: 70px;
+            color: white;   
+            font-family: 'Rubik Puddles', cursive;
+            display: flex;
+            padding-top: 20px;
+            flex-direction: row;
+            justify-content: center;
+            text-align: center;
+        }
+        .parafernalia{
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-rows: 1fr 1fr;
+            grid-template-areas: "para1 para2 para3"
+            "para4 para5 para6";
+            justify-items: center;
+            .para1{
+                grid-area: para1;
+                width: 400px;
+                height: 400px;
+                margin: 15px;
+                background-image: url(../Img/fondoparafernalia.jpg);
+                border-radius: 30px;
+            }
+            .para2{
+                grid-area: para2;
+                width: 400px;
+                height: 400px;
+                margin: 15px;
+                background-image: url(../Img/fondoparafernalia.jpg);
+                border-radius: 30px;
+            }
+            .para3{
+                grid-area: para3;
+                width: 400px;
+                height: 400px;
+                margin: 15px;
+                background-image: url(../Img/fondoparafernalia.jpg);
+                border-radius: 30px;
+            }
+            .para4{
+                grid-area: para4;
+                width: 400px;
+                height: 400px;
+                margin: 15px;
+                background-image: url(../Img/fondoparafernalia.jpg);
+                border-radius: 30px;
+            }
+            .para5{
+                grid-area: para5;
+                width: 400px;
+                height: 400px;
+                margin: 15px;
+                background-image: url(../Img/fondoparafernalia.jpg);
+                border-radius: 30px;
+            }
+            .para6{
+                grid-area: para6;
+                width: 400px;
+                height: 400px;
+                margin: 15px;
+                background-image: url(../Img/fondoparafernalia.jpg);
+                border-radius: 30px;
+            }
+
+        a{
+            text-decoration: none;
+            
+            p{
+            display: flex;
+            justify-content: center;
+            font-size: 40px;
+            font-family: 'Pacifico', cursive;
+            color:white;
+            background-color: black;
+            border-radius: 30px;
+            margin: auto;
+            width: 250px;
+            }
+            img{
+
+                display: flex;
+                flex-direction: column;
+                margin: auto;
+                width: 300px;
+                height: 300px;
+                border-radius: 50%;
+                background-image: contain;
+            }
+        }
+    }
+    // semas
+    h3{
+        display: flex;
+        justify-content: center;
+        padding-top: 30px;
+        font-size: 80px;
+        color: rgb(0, 0, 255,0.7);        
+        font-style: italic;
+    }
+    .semas{
+            padding-top: 50px;
+            display: grid;
+            width: 100%;
+            height: auto;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            grid-template-rows: 1fr 1fr;
+            grid-template-areas: 
+            "sema1 sema2 sema3 sema4"
+            "sema5 sema6 sema7 sema8"
+            ;
+            justify-items: center;
+            gap: 30px;
+            .sema1{
+                background-image: url(../Img/fondosema.jpg);
+                width: 300px;
+                height: 450px;              
+                grid-area: sema1;
+                text-decoration: none;
+                border-radius: 20px;
+                img{
+                    width: 250px;
+                    height: 250px;
+                    display: flex;
+                    margin:auto;
+                    margin-top: 20px;
+                    margin-bottom: 30px;
+                    border-radius:30px;
+                }
+                .descripcionsema{
+                    font-size: 30px;
+                    color: black;
+                    background-color: white;
+                    border-radius: 30px;
+                    padding: 5px;
+                    text-align: center;
+                }
+                .separador{
+                    display: flex;
+                    justify-content: center;
+                    margin-top: 20px;
+                    .precio{
+                        font-size:30px;
+                        padding: 8px;
+                        color: black;
+                        background-color: white;
+                        border-radius: 30px;
+                    }
+                    .iralaimg{
+                        font-size: 30px;
+                        color: white;
+                        background-color: blue;
+                        height: 40px;
+                        width: 100px;
+                        border-radius: 30px;
+                        margin: 5px;
+                        padding-left: 25px;
+                    }
+                }
+            }
+            .sema2{
+                background-image: url(../Img/fondosema.jpg);
+                width: 300px;
+                height: 450px;              
+                grid-area: sema2;
+                text-decoration: none;
+                border-radius: 20px;
+                img{
+                    width: 250px;
+                    height: 250px;
+                    display: flex;
+                    margin:auto;
+                    border-radius:20px;
+                    margin-top: 20px;
+                    margin-bottom: 20px;
+                }
+                .descripcionsema{
+                    font-size: 30px;
+                    color: black;
+                    background-color: white;
+                    border-radius: 30px;
+                    padding: 5px;
+                    text-align: center;
+                }
+                .separador{
+                    display: flex;
+                    justify-content: center;
+                    margin-top: 20px;
+                    .precio{
+                        font-size:30px;
+                        padding: 8px;
+                        color: black;
+                        background-color: white;
+                        border-radius: 30px;
+                    }
+                    .iralaimg{
+                        font-size: 30px;
+                        color: white;
+                        background-color: blue;
+                        height: 40px;
+                        width: 100px;
+                        border-radius: 30px;
+                        margin: 5px;
+                        padding-left: 25px;
+                    }
+                }
+            }
+            .sema3{
+                background-image: url(../Img/fondosema.jpg);
+                width: 300px;
+                height: 450px;              
+                grid-area: sema3;
+                text-decoration: none;
+                border-radius: 20px;
+                img{
+                    width: 250px;
+                    height: 250px;
+                    display: flex;
+                    margin:auto;
+                    border-radius:20px;
+                    margin-top: 20px;
+                    margin-bottom: 20px;
+                }
+                .descripcionsema{
+                    font-size: 30px;
+                    color: black;
+                    background-color: white;
+                    border-radius: 30px;
+                    padding: 5px;
+                    text-align: center;
+                }
+                .separador{
+                    display: flex;
+                    justify-content: center;
+                    margin-top: 20px;
+                    .precio{
+                        font-size:30px;
+                        padding: 8px;
+                        color: black;
+                        background-color: white;
+                        border-radius: 30px;
+                    }
+                    .iralaimg{
+                        font-size: 30px;
+                        color: white;
+                        background-color: blue;
+                        height: 40px;
+                        width: 100px;
+                        border-radius: 30px;
+                        margin: 5px;
+                        padding-left: 25px;
+                    }
+                }
+            }
+            .sema4{
+                background-image: url(../Img/fondosema.jpg);
+                width: 300px;
+                height: 450px;              
+                grid-area: sema4;
+                text-decoration: none;
+                border-radius: 20px;
+                img{
+                    width: 250px;
+                    height: 250px;
+                    display: flex;
+                    margin:auto;
+                    border-radius:20px;
+                    margin-top: 20px;
+                    margin-bottom: 20px;
+                }
+                .descripcionsema{
+                    font-size: 30px;
+                    color: black;
+                    background-color: white;
+                    border-radius: 30px;
+                    padding: 5px;
+                    text-align: center;
+                }
+                .separador{
+                    display: flex;
+                    justify-content: center;
+                    margin-top: 20px;
+                    .precio{
+                        font-size:30px;
+                        padding: 8px;
+                        color: black;
+                        background-color: white;
+                        border-radius: 30px;
+                    }
+                    .iralaimg{
+                        font-size: 30px;
+                        color: white;
+                        background-color: blue;
+                        height: 40px;
+                        width: 100px;
+                        border-radius: 30px;
+                        margin: 5px;
+                        padding-left: 25px;
+                    }
+                }
+            }
+            .sema5{
+                background-image: url(../Img/fondosema.jpg);
+                width: 300px;
+                height: 450px;              
+                grid-area: sema5;
+                text-decoration: none;
+                border-radius: 20px;
+                img{
+                    width: 250px;
+                    height: 250px;
+                    display: flex;
+                    margin:auto;
+                    border-radius:20px;
+                    margin-top: 20px;
+                    margin-bottom: 20px;
+                }
+                .descripcionsema{
+                    font-size: 30px;
+                    color: black;
+                    background-color: white;
+                    border-radius: 30px;
+                    padding: 5px;
+                    text-align: center;
+                }
+                .separador{
+                    display: flex;
+                    justify-content: center;
+                    margin-top: 20px;
+                    .precio{
+                        font-size:30px;
+                        padding: 8px;
+                        color: black;
+                        background-color: white;
+                        border-radius: 30px;
+                    }
+                    .iralaimg{
+                        font-size: 30px;
+                        color: white;
+                        background-color: blue;
+                        height: 40px;
+                        width: 100px;
+                        border-radius: 30px;
+                        margin: 5px;
+                        padding-left: 25px;
+                    }
+                }
+            }
+            .sema6{
+                background-image: url(../Img/fondosema.jpg);
+                width: 300px;
+                height: 450px;              
+                grid-area: sema6;
+                text-decoration: none;
+                border-radius: 20px;
+                img{
+                    width: 250px;
+                    height: 250px;
+                    display: flex;
+                    margin:auto;
+                    border-radius:20px;
+                    margin-top: 20px;
+                    margin-bottom: 20px;
+                }
+                .descripcionsema{
+                    font-size: 30px;
+                    color: black;
+                    background-color: white;
+                    border-radius: 30px;
+                    padding: 5px;
+                    text-align: center;
+                }
+                .separador{
+                    display: flex;
+                    justify-content: center;
+                    margin-top: 20px;
+                    .precio{
+                        font-size:30px;
+                        padding: 8px;
+                        color: black;
+                        background-color: white;
+                        border-radius: 30px;
+                    }
+                    .iralaimg{
+                        font-size: 30px;
+                        color: white;
+                        background-color: blue;
+                        height: 40px;
+                        width: 100px;
+                        border-radius: 30px;
+                        margin: 5px;
+                        padding-left: 25px;
+                    }
+                }
+            }
+            .sema7{
+                background-image: url(../Img/fondosema.jpg);
+                width: 300px;
+                height: 450px;              
+                grid-area: sema7;
+                text-decoration: none;
+                border-radius: 20px;
+                img{
+                    width: 250px;
+                    height: 250px;
+                    display: flex;
+                    margin:auto;
+                    border-radius:20px;
+                    margin-top: 20px;
+                    margin-bottom: 20px;
+                }
+                .descripcionsema{
+                    font-size: 30px;
+                    color: black;
+                    background-color: white;
+                    border-radius: 30px;
+                    padding: 5px;
+                    text-align: center;
+                }
+                .separador{
+                    display: flex;
+                    justify-content: center;
+                    margin-top: 20px;
+                    .precio{
+                        font-size:30px;
+                        padding: 8px;
+                        color: black;
+                        background-color: white;
+                        border-radius: 30px;
+                    }
+                    .iralaimg{
+                        font-size: 30px;
+                        color: white;
+                        background-color: blue;
+                        height: 40px;
+                        width: 100px;
+                        border-radius: 30px;
+                        margin: 5px;
+                        padding-left: 25px;
+                    }
+                }
+            }
+            .sema8{
+                background-image: url(../Img/fondosema.jpg);
+                width: 300px;
+                height: 450px;              
+                grid-area: sema8;
+                text-decoration: none;
+                border-radius: 20px;
+                img{
+                    width: 250px;
+                    height: 250px;
+                    display: flex;
+                    margin:auto;
+                    border-radius:20px;
+                    margin-top: 20px;
+                    margin-bottom: 20px;
+                }
+                .descripcionsema{
+                    font-size: 30px;
+                    color: black;
+                    background-color: white;
+                    border-radius: 30px;
+                    padding: 5px;
+                    text-align: center;
+                }
+                .separador{
+                    display: flex;
+                    justify-content: center;
+                    margin-top: 20px;
+                    .precio{
+                        font-size:30px;
+                        padding: 8px;
+                        color: black;
+                        background-color: white;
+                        border-radius: 30px;
+                    }
+                    .iralaimg{
+                        font-size: 30px;
+                        color: white;
+                        background-color: blue;
+                        height: 40px;
+                        width: 100px;
+                        border-radius: 30px;
+                        margin: 5px;
+                        padding-left: 25px;
+                    }
+                }
+            }
+        }
+            .foto{
+                width: 100%;
+                height: auto;
+                display: grid;
+                grid-template-columns: 1fr 1fr 1fr 1fr;
+                grid-template-rows: 1fr 1fr;
+                grid-template-areas: 
+                "foto1 foto2 foto3 foto4"
+                "foto5 foto6 foto7 foto8"
+                ;
+                gap: 30px;
+                justify-items: center;
+                .foto1{
+                    grid-area: foto1;
+                background-image: url(../Img/fondosema.jpg);
+                width: 300px;
+                height: 450px;              
+                text-decoration: none;
+                border-radius: 20px;
+                    img{
+                        width: 250px;
+                        height: 250px;
+                        display: flex;
+                        margin:auto;
+                        border-radius:20px;
+                        margin-top: 20px;
+                        margin-bottom: 20px;
+                    }
+                    .descripcionfoto{
+                        font-size: 30px;
+                        color: black;
+                        background-color: white;
+                        border-radius: 30px;
+                        padding: 5px;
+                        text-align: center;
+                    }
+                    .separador{
+                        display: flex;
+                        justify-content: center;
+                        margin-top: 20px;
+                        .precio{
+                            font-size:30px;
+                            padding: 8px;
+                            color: black;
+                            background-color: white;
+                            border-radius: 30px;
+                        }
+                        .iralaimg{
+                            font-size: 30px;
+                            color: white;
+                            background-color: blue;
+                            height: 40px;
+                            width: 100px;
+                            border-radius: 30px;
+                            margin: 5px;
+                            padding-left: 25px;
+                        }
+                    }
+                }
+                .foto2{
+                    grid-area: foto2;
+                background-image: url(../Img/fondosema.jpg);
+                width: 300px;
+                height: 450px;              
+                text-decoration: none;
+                border-radius: 20px;
+                    img{
+                        width: 250px;
+                        height: 250px;
+                        display: flex;
+                        margin:auto;
+                        border-radius:20px;
+                        margin-top: 20px;
+                        margin-bottom: 20px;
+                    }
+                    .descripcionfoto{
+                        font-size: 30px;
+                        color: black;
+                        background-color: white;
+                        border-radius: 30px;
+                        padding: 5px;
+                        text-align: center;
+                    }
+                    .separador{
+                        display: flex;
+                        justify-content: center;
+                        margin-top: 20px;
+                        .precio{
+                            font-size:30px;
+                            padding: 8px;
+                            color: black;
+                            background-color: white;
+                            border-radius: 30px;
+                        }
+                        .iralaimg{
+                            font-size: 30px;
+                            color: white;
+                            background-color: blue;
+                            height: 40px;
+                            width: 100px;
+                            border-radius: 30px;
+                            margin: 5px;
+                            padding-left: 25px;
+                        }
+                    }
+                }
+                .foto3{
+                    grid-area: foto3;
+                    background-image: url(../Img/fondosema.jpg);
+                    width: 300px;
+                    height: 450px;              
+                    text-decoration: none;
+                    border-radius: 20px;
+                        img{
+                            width: 250px;
+                            height: 250px;
+                            display: flex;
+                            margin:auto;
+                            border-radius:20px;
+                            margin-top: 20px;
+                            margin-bottom: 20px;
+                        }
+                        .descripcionfoto{
+                            font-size: 30px;
+                            color: black;
+                            background-color: white;
+                            border-radius: 30px;
+                            padding: 5px;
+                            text-align: center;
+                        }
+                        .separador{
+                            display: flex;
+                            justify-content: center;
+                            margin-top: 20px;
+                            .precio{
+                                font-size:30px;
+                                padding: 8px;
+                                color: black;
+                                background-color: white;
+                                border-radius: 30px;
+                            }
+                            .iralaimg{
+                                font-size: 30px;
+                                color: white;
+                                background-color: blue;
+                                height: 40px;
+                                width: 100px;
+                                border-radius: 30px;
+                                margin: 5px;
+                                padding-left: 25px;
+                            }
+                        }
+                    }
+                .foto4{
+                    grid-area: foto4;
+                    background-image: url(../Img/fondosema.jpg);
+                    width: 300px;
+                    height: 450px;              
+                    text-decoration: none;
+                    border-radius: 20px;
+                        img{
+                            width: 250px;
+                            height: 250px;
+                            display: flex;
+                            margin:auto;
+                            border-radius:20px;
+                            margin-top: 20px;
+                            margin-bottom: 20px;
+                        }
+                        .descripcionfoto{
+                            font-size: 30px;
+                            color: black;
+                            background-color: white;
+                            border-radius: 30px;
+                            padding: 5px;
+                            text-align: center;
+                        }
+                        .separador{
+                            display: flex;
+                            justify-content: center;
+                            margin-top: 20px;
+                            .precio{
+                                font-size:30px;
+                                padding: 8px;
+                                color: black;
+                                background-color: white;
+                                border-radius: 30px;
+                            }
+                            .iralaimg{
+                                font-size: 30px;
+                                color: white;
+                                background-color: blue;
+                                height: 40px;
+                                width: 100px;
+                                border-radius: 30px;
+                                margin: 5px;
+                                padding-left: 25px;
+                            }
+                        }
+                    }
+                .foto5{
+                    grid-area: foto5;
+                    background-image: url(../Img/fondosema.jpg);
+                    width: 300px;
+                    height: 450px;              
+                    text-decoration: none;
+                    border-radius: 20px;
+                        img{
+                            width: 250px;
+                            height: 250px;
+                            display: flex;
+                            margin:auto;
+                            border-radius:20px;
+                            margin-top: 20px;
+                            margin-bottom: 20px;
+                        }
+                        .descripcionfoto{
+                            font-size: 30px;
+                            color: black;
+                            background-color: white;
+                            border-radius: 30px;
+                            padding: 5px;
+                            text-align: center;
+                        }
+                        .separador{
+                            display: flex;
+                            justify-content: center;
+                            margin-top: 20px;
+                            text-align: center;
+                            .precio{
+                                font-size:30px;
+                                padding: 8px;
+                                color: black;
+                                background-color: white;
+                                border-radius: 30px;
+                            }
+                            .iralaimg{
+                                font-size: 30px;
+                                color: white;
+                                background-color: blue;
+                                height: 40px;
+                                width: 100px;
+                                border-radius: 30px;
+                                margin: 5px;
+                                padding-left: 25px;
+                            }
+                        }
+                    }
+                .foto6{
+                    grid-area: foto6;
+                    background-image: url(../Img/fondosema.jpg);
+                width: 300px;
+                height: 450px;              
+                text-decoration: none;
+                border-radius: 20px;
+                    img{
+                        width: 250px;
+                        height: 250px;
+                        display: flex;
+                        margin:auto;
+                        border-radius:20px;
+                        margin-top: 20px;
+                        margin-bottom: 20px;
+                    }
+                    .descripcionfoto{
+                        font-size: 30px;
+                        color: black;
+                        background-color: white;
+                        border-radius: 30px;
+                        padding: 5px;
+                        text-align: center;
+                    }
+                    .separador{
+                        display: flex;
+                        justify-content: center;
+                        margin-top: 20px;
+                        .precio{
+                            font-size:30px;
+                            padding: 8px;
+                            color: black;
+                            background-color: white;
+                            border-radius: 30px;
+                        }
+                        .iralaimg{
+                            font-size: 30px;
+                            color: white;
+                            background-color: blue;
+                            height: 40px;
+                            width: 100px;
+                            border-radius: 30px;
+                            margin: 5px;
+                            padding-left: 25px;
+                        }
+                    }
+                }
+                .foto7{
+                    grid-area: foto7;
+                    background-image: url(../Img/fondosema.jpg);
+                width: 300px;
+                height: 450px;              
+                text-decoration: none;
+                border-radius: 20px;
+                    img{
+                        width: 250px;
+                        height: 250px;
+                        display: flex;
+                        margin:auto;
+                        border-radius:20px;
+                        margin-top: 20px;
+                        margin-bottom: 20px;
+                    }
+                    .descripcionfoto{
+                        font-size: 30px;
+                        color: black;
+                        background-color: white;
+                        border-radius: 30px;
+                        padding: 5px;
+                        text-align: center;
+                    }
+                    .separador{
+                        display: flex;
+                        justify-content: center;
+                        margin-top: 20px;
+                        .precio{
+                            font-size:30px;
+                            padding: 8px;
+                            color: black;
+                            background-color: white;
+                            border-radius: 30px;
+                        }
+                        .iralaimg{
+                            font-size: 30px;
+                            color: white;
+                            background-color: blue;
+                            height: 40px;
+                            width: 100px;
+                            border-radius: 30px;
+                            margin: 5px;
+                            padding-left: 25px;
+                        }
+                    }
+                }
+                .foto8{
+                    grid-area: foto8;
+                    background-image: url(../Img/fondosema.jpg);
+                width: 300px;
+                height: 450px;              
+                text-decoration: none;
+                border-radius: 20px;
+                    img{
+                        width: 250px;
+                        height: 250px;
+                        display: flex;
+                        margin:auto;
+                        border-radius:20px;
+                        margin-top: 20px;
+                        margin-bottom: 20px;
+                    }
+                    .descripcionfoto{
+                        font-size: 30px;
+                        color: black;
+                        background-color: white;
+                        border-radius: 30px;
+                        padding: 5px;
+                        text-align: center;
+                    }
+                    .separador{
+                        display: flex;
+                        justify-content: center;
+                        margin-top: 20px;
+                        .precio{
+                            font-size:30px;
+                            padding: 8px;
+                            color: black;
+                            background-color: white;
+                            border-radius: 30px;
+                        }
+                        .iralaimg{
+                            font-size: 30px;
+                            color: white;
+                            background-color: blue;
+                            height: 40px;
+                            width: 100px;
+                            border-radius: 30px;
+                            margin: 5px;
+                            padding-left: 25px;
+                        }
+                    }
+                }
+                // .foto9{
+                //     grid-area: foto9;
+                //     background-image: url(../Img/fondosema.jpg);
+                // width: 300px;
+                // height: 450px;              
+                // text-decoration: none;
+                // border-radius: 20px;
+                //     img{
+                //         width: 250px;
+                //         height: 250px;
+                //         display: flex;
+                //         margin:auto;
+                //         border-radius:20px;
+                //         margin-top: 20px;
+                //         margin-bottom: 20px;
+                //     }
+                //     .descripcionfoto{
+                //         font-size: 30px;
+                //         color: black;
+                //         background-color: white;
+                //         border-radius: 30px;
+                //         padding: 5px;
+                //         text-align: center;
+                //     }
+                //     .separador{
+                //         display: flex;
+                //         justify-content: center;
+                //         margin-top: 20px;
+                //         .precio{
+                //             font-size:30px;
+                //             padding: 8px;
+                //             color: black;
+                //             background-color: white;
+                //             border-radius: 30px;
+                //         }
+                //         .iralaimg{
+                //             font-size: 30px;
+                //             color: white;
+                //             background-color: blue;
+                //             height: 40px;
+                //             width: 100px;
+                //             border-radius: 30px;
+                //             margin: 5px;
+                //             padding-left: 25px;
+                //         }
+                //     }
+                // }
+            }
+            .cbd{
+                width: 100%;
+                height: auto;
+                display: grid;
+                grid-template-columns: 1fr 1fr 1fr 1fr;
+                grid-template-rows: 1fr 1fr;
+                grid-template-areas: 
+                "cbd1 cbd2 cbd3 cbd4"
+                "cbd5 cbd6 cbd7 cbd8"
+                ;
+                gap: 30px;
+                justify-items: center;
+                padding-bottom: 30px;
+                
+                .cbd1{
+                    grid-area: cbd1;
+                background-image: url(../Img/fondosema.jpg);
+                width: 300px;
+                height: 450px;              
+                text-decoration: none;
+                border-radius: 20px;
+                    img{
+                        width: 250px;
+                        height: 250px;
+                        display: flex;
+                        margin:auto;
+                        border-radius:20px;
+                        margin-top: 20px;
+                        margin-bottom: 20px;
+                    }
+                    .descripcionfoto{
+                        font-size: 30px;
+                        color: black;
+                        background-color: white;
+                        border-radius: 30px;
+                        padding: 5px;
+                        text-align: center;
+                    }
+                    .separador{
+                        display: flex;
+                        justify-content: center;
+                        margin-top: 20px;
+                        .precio{
+                            font-size:30px;
+                            padding: 8px;
+                            color: black;
+                            background-color: white;
+                            border-radius: 30px;
+                        }
+                        .iralaimg{
+                            font-size: 30px;
+                            color: white;
+                            background-color: blue;
+                            height: 40px;
+                            width: 100px;
+                            border-radius: 30px;
+                            margin: 5px;
+                            padding-left: 25px;
+                        }
+                    }
+                }
+                .cbd2{
+                    grid-area: cbd2;
+                background-image: url(../Img/fondosema.jpg);
+                width: 300px;
+                height: 450px;              
+                text-decoration: none;
+                border-radius: 20px;
+                    img{
+                        width: 250px;
+                        height: 250px;
+                        display: flex;
+                        margin:auto;
+                        border-radius:20px;
+                        margin-top: 20px;
+                        margin-bottom: 20px;
+                    }
+                    .descripcionfoto{
+                        font-size: 30px;
+                        color: black;
+                        background-color: white;
+                        border-radius: 30px;
+                        padding: 5px;
+                        text-align: center;
+                    }
+                    .separador{
+                        display: flex;
+                        justify-content: center;
+                        margin-top: 20px;
+                        .precio{
+                            font-size:30px;
+                            padding: 8px;
+                            color: black;
+                            background-color: white;
+                            border-radius: 30px;
+                        }
+                        .iralaimg{
+                            font-size: 30px;
+                            color: white;
+                            background-color: blue;
+                            height: 40px;
+                            width: 100px;
+                            border-radius: 30px;
+                            margin: 5px;
+                            padding-left: 25px;
+                        }
+                    }
+                }
+                .cbd3{
+                    grid-area: cbd3;
+                    background-image: url(../Img/fondosema.jpg);
+                    width: 300px;
+                    height: 450px;              
+                    text-decoration: none;
+                    border-radius: 20px;
+                        img{
+                            width: 250px;
+                            height: 250px;
+                            display: flex;
+                            margin:auto;
+                            border-radius:20px;
+                            margin-top: 20px;
+                            margin-bottom: 20px;
+                        }
+                        .descripcionfoto{
+                            font-size: 30px;
+                            color: black;
+                            background-color: white;
+                            border-radius: 30px;
+                            padding: 5px;
+                            text-align: center;
+                        }
+                        .separador{
+                            display: flex;
+                            justify-content: center;
+                            margin-top: 20px;
+                            .precio{
+                                font-size:30px;
+                                padding: 8px;
+                                color: black;
+                                background-color: white;
+                                border-radius: 30px;
+                            }
+                            .iralaimg{
+                                font-size: 30px;
+                                color: white;
+                                background-color: blue;
+                                height: 40px;
+                                width: 100px;
+                                border-radius: 30px;
+                                margin: 5px;
+                                padding-left: 25px;
+                            }
+                        }
+                    }
+                .cbd4{
+                    grid-area: cbd4;
+                    background-image: url(../Img/fondosema.jpg);
+                    width: 300px;
+                    height: 450px;              
+                    text-decoration: none;
+                    border-radius: 20px;
+                        img{
+                            width: 250px;
+                            height: 250px;
+                            display: flex;
+                            margin:auto;
+                            border-radius:20px;
+                            margin-top: 20px;
+                            margin-bottom: 20px;
+                        }
+                        .descripcionfoto{
+                            font-size: 30px;
+                            color: black;
+                            background-color: white;
+                            border-radius: 30px;
+                            padding: 5px;
+                            text-align: center;
+                        }
+                        .separador{
+                            display: flex;
+                            justify-content: center;
+                            margin-top: 20px;
+                            .precio{
+                                font-size:30px;
+                                padding: 8px;
+                                color: black;
+                                background-color: white;
+                                border-radius: 30px;
+                            }
+                            .iralaimg{
+                                font-size: 30px;
+                                color: white;
+                                background-color: blue;
+                                height: 40px;
+                                width: 100px;
+                                border-radius: 30px;
+                                margin: 5px;
+                                padding-left: 25px;
+                            }
+                        }
+                    }
+                .cbd5{
+                    grid-area: cbd5;
+                    background-image: url(../Img/fondosema.jpg);
+                    width: 300px;
+                    height: 450px;              
+                    text-decoration: none;
+                    border-radius: 20px;
+                        img{
+                            width: 250px;
+                            height: 250px;
+                            display: flex;
+                            margin:auto;
+                            border-radius:20px;
+                            margin-top: 20px;
+                            margin-bottom: 20px;
+                        }
+                        .descripcionfoto{
+                            font-size: 30px;
+                            color: black;
+                            background-color: white;
+                            border-radius: 30px;
+                            padding: 5px;
+                            text-align: center;
+                        }
+                        .separador{
+                            display: flex;
+                            justify-content: center;
+                            margin-top: 20px;
+                            .precio{
+                                font-size:30px;
+                                padding: 8px;
+                                color: black;
+                                background-color: white;
+                                border-radius: 30px;
+                            }
+                            .iralaimg{
+                                font-size: 30px;
+                                color: white;
+                                background-color: blue;
+                                height: 40px;
+                                width: 100px;
+                                border-radius: 30px;
+                                margin: 5px;
+                                padding-left: 25px;
+                            }
+                        }
+                    }
+                .cbd6{
+                    grid-area: cbd6;
+                    background-image: url(../Img/fondosema.jpg);
+                width: 300px;
+                height: 450px;              
+                text-decoration: none;
+                border-radius: 20px;
+                    img{
+                        width: 250px;
+                        height: 250px;
+                        display: flex;
+                        margin:auto;
+                        border-radius:20px;
+                        margin-top: 20px;
+                        margin-bottom: 20px;
+                    }
+                    .descripcionfoto{
+                        font-size: 30px;
+                        color: black;
+                        background-color: white;
+                        border-radius: 30px;
+                        padding: 5px;
+                        text-align: center;
+                    }
+                    .separador{
+                        display: flex;
+                        justify-content: center;
+                        margin-top: 20px;
+                        .precio{
+                            font-size:30px;
+                            padding: 8px;
+                            color: black;
+                            background-color: white;
+                            border-radius: 30px;
+                        }
+                        .iralaimg{
+                            font-size: 30px;
+                            color: white;
+                            background-color: blue;
+                            height: 40px;
+                            width: 100px;
+                            border-radius: 30px;
+                            margin: 5px;
+                            padding-left: 25px;
+                        }
+                    }
+                }
+                .cbd7{
+                    grid-area: cbd7;
+                    background-image: url(../Img/fondosema.jpg);
+                width: 300px;
+                height: 450px;              
+                text-decoration: none;
+                border-radius: 20px;
+                    img{
+                        width: 250px;
+                        height: 250px;
+                        display: flex;
+                        margin:auto;
+                        border-radius:20px;
+                        margin-top: 20px;
+                        margin-bottom: 20px;
+                    }
+                    .descripcionfoto{
+                        font-size: 30px;
+                        color: black;
+                        background-color: white;
+                        border-radius: 30px;
+                        padding: 5px;
+                        text-align: center;
+                    }
+                    .separador{
+                        display: flex;
+                        justify-content: center;
+                        margin-top: 20px;
+                        .precio{
+                            font-size:30px;
+                            padding: 8px;
+                            color: black;
+                            background-color: white;
+                            border-radius: 30px;
+                        }
+                        .iralaimg{
+                            font-size: 30px;
+                            color: white;
+                            background-color: blue;
+                            height: 40px;
+                            width: 100px;
+                            border-radius: 30px;
+                            margin: 5px;
+                            padding-left: 25px;
+                        }
+                    }
+                }
+                .cbd8{
+                    grid-area: cbd8;
+                    background-image: url(../Img/fondosema.jpg);
+                width: 300px;
+                height: 450px;              
+                text-decoration: none;
+                border-radius: 20px;
+                    img{
+                        width: 250px;
+                        height: 250px;
+                        display: flex;
+                        margin:auto;
+                        border-radius:20px;
+                        margin-top: 20px;
+                        margin-bottom: 20px;
+                    }
+                    .descripcionfoto{
+                        font-size: 30px;
+                        color: black;
+                        background-color: white;
+                        border-radius: 30px;
+                        padding: 5px;
+                        text-align: center;
+                    }
+                    .separador{
+                        display: flex;
+                        justify-content: center;
+                        margin-top: 20px;
+                        .precio{
+                            font-size:30px;
+                            padding: 8px;
+                            color: black;
+                            background-color: white;
+                            border-radius: 30px;
+                        }
+                        .iralaimg{
+                            font-size: 30px;
+                            color: white;
+                            background-color: blue;
+                            height: 40px;
+                            width: 100px;
+                            border-radius: 30px;
+                            margin: 5px;
+                            padding-left: 25px;
+                        }
+                    }
+                }
+                // .cbd9{
+                //     grid-area: cbd9;
+                //     background-image: url(../Img/fondosema.jpg);
+                // width: 300px;
+                // height: 450px;              
+                // text-decoration: none;
+                // border-radius: 20px;
+                //     img{
+                //         width: 250px;
+                //         height: 250px;
+                //         display: flex;
+                //         margin:auto;
+                //         border-radius:20px;
+                //         margin-top: 20px;
+                //         margin-bottom: 20px;
+                //     }
+                //     .descripcionfoto{
+                //         font-size: 30px;
+                //         color: black;
+                //         background-color: white;
+                //         border-radius: 30px;
+                //         padding: 5px;
+                //         text-align: center;
+                //     }
+                //     .separador{
+                //         display: flex;
+                //         justify-content: center;
+                //         margin-top: 20px;
+                //         .precio{
+                //             font-size:30px;
+                //             padding: 8px;
+                //             color: black;
+                //             background-color: white;
+                //             border-radius: 30px;
+                //         }
+                //         .iralaimg{
+                //             font-size: 30px;
+                //             color: white;
+                //             background-color: blue;
+                //             height: 40px;
+                //             width: 100px;
+                //             border-radius: 30px;
+                //             margin: 5px;
+                //             padding-left: 25px;
+                //         }
+                //     }
+                // }
+            }
+}
+main{
+    .armatuindoor{
+        width: 100%;
+        height: auto;
+            
+    
+        .h3ventilacion{
+            color: rgba(10, 78, 167, 0.945);
+            font-family: 'Cherry Bomb One', cursive;
+            background-image: url(../Img/fondoh3.jpg);
+            background-position: center;
+            width:400px;
+            height: 100px;
+            border-radius: 100px;
+            padding-top: 0px;
+            margin: auto;
+            font-size: 70px;
+        }
+    .carpas{
+        .h3{
+            grid-area: h3;
+            color: rgba(10, 78, 167, 0.945);
+            font-family: 'Cherry Bomb One', cursive;
+            background-image: url(../Img/fondoh3.jpg);
+            background-position: auto;
+            width: 900px;
+            height: 100px;
+            border-radius: 100px;
+            padding-top: 0px;
+            margin: auto;
+            font-size: 70px;
+            margin: 20px;
+        }
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1f;
+        grid-template-areas: "h3 h3 h3" "carpa1 carpa2 carpa3";
+        padding: 30px;
+        gap: 30px;
+        justify-items: center;
+    .carpa1{
+        grid-area: carpa1;
+        background-image: url(../Img/Galaxiaa.jpg);
+        width: 300px;
+        height: 450px;
+        text-decoration: none;
+        border-radius: 20px;
+        img{
+            width: 250px;
+            height: 250px;
+            display: flex;
+            margin: auto;
+            border-radius: 20px;
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+        .descripcionfoto{
+            font-size: 30px;
+            background-color: white;
+            color: black;
+            border-radius: 30px;
+            padding: 5px;
+            text-align: center;
+        }
+        .separador{
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+            .precio{
+                font-size: 30px;
+                padding: 8px;
+                color: black;
+                background-color: white;
+                border-radius: 30px;
+            }
+            .iralaimg{
+                font-size: 30px;
+                color: white;
+                background-color: #4943de;
+                height: 40px;
+                width: 100px;
+                border-radius: 30px;
+                margin: 5px;
+                padding-left: 25px;
+            }
+        }
+    }
+    .carpa2{
+        grid-area: carpa2;
+        background-image: url(../Img/Galaxiaa.jpg);
+        width: 300px;
+        height: 450px;
+        text-decoration: none;
+        border-radius: 20px;
+        img{
+            width: 250px;
+            height: 250px;
+            display: flex;
+            margin: auto;
+            border-radius: 20px;
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+        .descripcionfoto{
+            font-size: 30px;
+            background-color: white;
+            color: black;
+            border-radius: 30px;
+            padding: 5px;
+            text-align: center;
+        }
+        .separador{
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+            .precio{
+                font-size: 30px;
+                padding: 8px;
+                color: black;
+                background-color: white;
+                border-radius: 30px;
+            }
+            .iralaimg{
+                font-size: 30px;
+                color: white;
+                background-color: #4943de;
+                height: 40px;
+                width: 100px;
+                border-radius: 30px;
+                margin: 5px;
+                padding-left: 25px;
+            }
+        }
+    }
+    .carpa3{
+        grid-area: carpa3;
+        background-image: url(../Img/Galaxiaa.jpg);
+        width: 300px;
+        height: 450px;
+        text-decoration: none;
+        border-radius: 20px;
+        img{
+            width: 250px;
+            height: 250px;
+            display: flex;
+            margin: auto;
+            border-radius: 20px;
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+        .descripcionfoto{
+            font-size: 30px;
+            background-color: white;
+            color: black;
+            border-radius: 30px;
+            padding: 5px;
+            text-align: center;
+        }
+        .separador{
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+            .precio{
+                font-size: 30px;
+                padding: 8px;
+                color: black;
+                background-color: white;
+                border-radius: 30px;
+            }
+            .iralaimg{
+                font-size: 30px;
+                color: white;
+                background-color: #4943de;
+                height: 40px;
+                width: 100px;
+                border-radius: 30px;
+                margin: 5px;
+                padding-left: 25px;
+            }
+        }
+    }
+        }
+        .h3{
+            grid-area: h3;
+            color: rgba(10, 78, 167, 0.945);
+            font-family: 'Cherry Bomb One', cursive;
+            background-image: url(../Img/fondoh3.jpg);
+            background-position: auto;
+            width: 900px;
+            height: 100px;
+            border-radius: 100px;
+            padding-top: 0px;
+            font-size: 70px;
+            margin: auto;
+        }
+        .iluminacion{
+            width: 100%;
+            height: auto;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            grid-template-rows: 1fr;
+            grid-template-areas: 
+            "iluminacion1 iluminacion2 iluminacion3 iluminacion4"
+            ;
+            padding: 30px;
+            gap: 30px;
+            justify-items: center;
+            
+            .iluminacion1{
+                background-image: url(../Img/Galaxiaa.jpg);
+                grid-area: iluminacion1;
+                width: 300px;
+                height: 450px;
+                text-decoration: none;
+                font-size: 30px;
+                text-align: center;
+                border-radius: 20px;
+                img{
+                    width: 250px;
+                    height: 250px;
+                    margin-top: 20px;
+                    margin-bottom: 20px;
+                    border-radius: 30px;
+                }
+                .descripcionfoto{
+                    font-size: 30px;
+                background-color: white;
+                color: black;
+                border-radius: 30px;
+                padding: 5px;
+                text-align: center;
+                }
+                .separador{
+                    display: flex;
+            justify-content: center;
+            margin-top: 20px;
+            
+            .precio{
+                font-size: 30px;
+                padding: 8px;
+                color: black;
+                background-color: white;
+                border-radius: 30px;
+            }
+            .iralaimg{
+                font-size: 30px;
+                color: white;
+                background-color: #4943de;
+                height: 40px;
+                width: 100px;
+                border-radius: 30px;
+                margin: 5px;
+                
+            }
+                }
+            }
+            .iluminacion2{
+                background-image: url(../Img/Galaxiaa.jpg);
+                grid-area: iluminacion2;
+                width: 300px;
+                height: 450px;
+                text-decoration: none;
+                font-size: 30px;
+                text-align: center;
+                border-radius: 20px;
+                img{
+                    width: 250px;
+                    height: 250px;
+                    margin-top: 20px;
+                    margin-bottom: 20px;
+                    border-radius: 30px;
+                }
+                .descripcionfoto{
+                    font-size: 30px;
+                background-color: white;
+                color: black;
+                border-radius: 30px;
+                padding: 5px;
+                text-align: center;
+                }
+                .separador{
+                    display: flex;
+            justify-content: center;
+            margin-top: 20px;
+            
+            .precio{
+                font-size: 30px;
+                padding: 8px;
+                color: black;
+                background-color: white;
+                border-radius: 30px;
+            }
+            .iralaimg{
+                font-size: 30px;
+                color: white;
+                background-color: #4943de;
+                height: 40px;
+                width: 100px;
+                border-radius: 30px;
+                margin: 5px;
+                
+            }
+                }
+            }
+            
+            .iluminacion3{
+                background-image: url(../Img/Galaxiaa.jpg);
+                grid-area: iluminacion3;
+                width: 300px;
+                height: 450px;
+                text-decoration: none;
+                font-size: 30px;
+                text-align: center;
+                border-radius: 20px;
+                img{
+                    width: 250px;
+                    height: 250px;
+                    margin-top: 20px;
+                    margin-bottom: 20px;
+                    border-radius: 30px;
+                }
+                .descripcionfoto{
+                    font-size: 30px;
+                background-color: white;
+                color: black;
+                border-radius: 30px;
+                padding: 5px;
+                text-align: center;
+                }
+                .separador{
+                    display: flex;
+            justify-content: center;
+            margin-top: 20px;
+            
+            .precio{
+                font-size: 30px;
+                padding: 8px;
+                color: black;
+                background-color: white;
+                border-radius: 30px;
+            }
+            .iralaimg{
+                font-size: 30px;
+                color: white;
+                background-color: #4943de;
+                height: 40px;
+                width: 100px;
+                border-radius: 30px;
+                margin: 5px;
+                
+            }
+                }
+            
+            }
+            .iluminacion4{
+                background-image: url(../Img/Galaxiaa.jpg);
+                grid-area: iluminacion4;
+                width: 300px;
+                height: 450px;
+                text-decoration: none;
+                font-size: 30px;
+                text-align: center;
+                border-radius: 20px;
+                
+                img{
+                    width: 250px;
+                    height: 250px;
+                    margin-top: 20px;
+                    margin-bottom: 20px;
+                    border-radius: 30px;
+                }
+                .descripcionfoto{
+                    font-size: 30px;
+                background-color: white;
+                color: black;
+                border-radius: 30px;
+                padding: 5px;
+                text-align: center;
+                }
+                .separador{
+                    display: flex;
+            justify-content: center;
+            margin-top: 20px;
+            
+            .precio{
+                font-size: 30px;
+                padding: 8px;
+                color: black;
+                background-color: white;
+                border-radius: 30px;
+            }
+            .iralaimg{
+                font-size: 30px;
+                color: white;
+                background-color: #4943de;
+                height: 40px;
+                width: 100px;
+                border-radius: 30px;
+                margin: 5px;
+                
+            }
+                }
+            }
+        }
+        .ventilacion{
+            width: 100%;
+            height: auto;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            grid-template-rows: 1fr;
+            grid-template-areas: 
+            "ventilacion1 ventilacion2 ventilacion3 ventilacion4"
+            ;
+            padding: 30px;
+            gap: 30px;
+            justify-items: center;
+            
+            .ventilacion1{
+                background-image: url(../Img/Galaxiaa.jpg);
+                grid-area: ventilacion1;
+                width: 300px;
+                height: 450px;
+                text-decoration: none;
+                font-size: 30px;
+                text-align: center;
+                border-radius: 20px;
+                img{
+                    width: 250px;
+                    height: 250px;
+                    margin-top: 20px;
+                    margin-bottom: 20px;
+                    border-radius: 30px;
+                }
+                .descripcionfoto{
+                    font-size: 30px;
+                background-color: white;
+                color: black;
+                border-radius: 30px;
+                padding: 5px;
+                text-align: center;
+                }
+                .separador{
+                    display: flex;
+            justify-content: center;
+            margin-top: 20px;
+            
+            .precio{
+                font-size: 30px;
+                padding: 8px;
+                color: black;
+                background-color: white;
+                border-radius: 30px;
+            }
+            .iralaimg{
+                font-size: 30px;
+                color: white;
+                background-color: #4943de;
+                height: 40px;
+                width: 100px;
+                border-radius: 30px;
+                margin: 5px;
+                
+            }
+                }
+            }
+            .ventilacion2{
+                background-image: url(../Img/Galaxiaa.jpg);
+                grid-area: ventilacion2;
+                width: 300px;
+                height: 450px;
+                text-decoration: none;
+                font-size: 30px;
+                text-align: center;
+                border-radius: 20px;
+                img{
+                    width: 250px;
+                    height: 250px;
+                    margin-top: 20px;
+                    margin-bottom: 20px;
+                    border-radius: 30px;
+                }
+                .descripcionfoto{
+                    font-size: 30px;
+                background-color: white;
+                color: black;
+                border-radius: 30px;
+                padding: 5px;
+                text-align: center;
+                }
+                .separador{
+                    display: flex;
+            justify-content: center;
+            margin-top: 20px;
+            
+            .precio{
+                font-size: 30px;
+                padding: 8px;
+                color: black;
+                background-color: white;
+                border-radius: 30px;
+            }
+            .iralaimg{
+                font-size: 30px;
+                color: white;
+                background-color: #4943de;
+                height: 40px;
+                width: 100px;
+                border-radius: 30px;
+                margin: 5px;
+                
+            }
+                }
+            }
+            
+            .ventilacion3{
+                background-image: url(../Img/Galaxiaa.jpg);
+                grid-area: ventilacion3;
+                width: 300px;
+                height: 450px;
+                text-decoration: none;
+                font-size: 30px;
+                text-align: center;
+                border-radius: 20px;
+                img{
+                    width: 250px;
+                    height: 250px;
+                    margin-top: 20px;
+                    margin-bottom: 20px;
+                    border-radius: 30px;
+                }
+                .descripcionfoto{
+                    font-size: 30px;
+                background-color: white;
+                color: black;
+                border-radius: 30px;
+                padding: 5px;
+                text-align: center;
+                }
+                .separador{
+                    display: flex;
+            justify-content: center;
+            margin-top: 20px;
+            
+            .precio{
+                font-size: 30px;
+                padding: 8px;
+                color: black;
+                background-color: white;
+                border-radius: 30px;
+            }
+            .iralaimg{
+                font-size: 30px;
+                color: white;
+                background-color: #4943de;
+                height: 40px;
+                width: 100px;
+                border-radius: 30px;
+                margin: 5px;
+                
+            }
+                }
+            
+            }
+            .ventilacion4{
+                background-image: url(../Img/Galaxiaa.jpg);
+                grid-area: ventilacion4;
+                width: 300px;
+                height: 450px;
+                text-decoration: none;
+                font-size: 30px;
+                text-align: center;
+                border-radius: 20px;
+                
+                img{
+                    width: 250px;
+                    height: 250px;
+                    margin-top: 20px;
+                    margin-bottom: 20px;
+                    border-radius: 30px;
+                }
+                .descripcionfoto{
+                    font-size: 30px;
+                background-color: white;
+                color: black;
+                border-radius: 30px;
+                padding: 5px;
+                text-align: center;
+                }
+                .separador{
+                    display: flex;
+            justify-content: center;
+            margin-top: 20px;
+            
+            .precio{
+                font-size: 30px;
+                padding: 8px;
+                color: black;
+                background-color: white;
+                border-radius: 30px;
+            }
+            .iralaimg{
+                font-size: 30px;
+                color: white;
+                background-color: #4943de;
+                height: 40px;
+                width: 100px;
+                border-radius: 30px;
+                margin: 5px;
+                
+            }
+                }
+            }
+        }
+        .timer{
+            width: 100%;
+            height: auto;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-rows: 1fr;
+            grid-template-areas: 
+            "timer1 timer2 timer3"            
+            ;
+            padding: 30px;
+            gap: 30px;
+            justify-items: center;
+            
+            .timer1{
+                background-image: url(../Img/Galaxiaa.jpg);
+                grid-area: timer1;
+                width: 300px;
+                height: 450px;
+                text-decoration: none;
+                font-size: 30px;
+                text-align: center;
+                border-radius: 20px;
+                img{
+                    width: 250px;
+                    height: 250px;
+                    margin-top: 20px;
+                    margin-bottom: 20px;
+                    border-radius: 30px;
+                }
+                .descripcionfoto{
+                    font-size: 30px;
+                background-color: white;
+                color: black;
+                border-radius: 30px;
+                padding: 5px;
+                text-align: center;
+                }
+                .separador{
+                    display: flex;
+            justify-content: center;
+            margin-top: 20px;
+            
+            .precio{
+                font-size: 30px;
+                padding: 8px;
+                color: black;
+                background-color: white;
+                border-radius: 30px;
+            }
+            .iralaimg{
+                font-size: 30px;
+                color: white;
+                background-color: #4943de;
+                height: 40px;
+                width: 100px;
+                border-radius: 30px;
+                margin: 5px;
+                
+            }
+                }
+            }
+            .timer2{
+                background-image: url(../Img/Galaxiaa.jpg);
+                grid-area: timer2;
+                width: 300px;
+                height: 450px;
+                text-decoration: none;
+                font-size: 30px;
+                text-align: center;
+                border-radius: 20px;
+                img{
+                    width: 250px;
+                    height: 250px;
+                    margin-top: 20px;
+                    margin-bottom: 20px;
+                    border-radius: 30px;
+                }
+                .descripcionfoto{
+                    font-size: 30px;
+                background-color: white;
+                color: black;
+                border-radius: 30px;
+                padding: 5px;
+                text-align: center;
+                }
+                .separador{
+                    display: flex;
+            justify-content: center;
+            margin-top: 20px;
+            
+            .precio{
+                font-size: 30px;
+                padding: 8px;
+                color: black;
+                background-color: white;
+                border-radius: 30px;
+            }
+            .iralaimg{
+                font-size: 30px;
+                color: white;
+                background-color: #4943de;
+                height: 40px;
+                width: 100px;
+                border-radius: 30px;
+                margin: 5px;
+                
+            }
+                }
+            }
+            .timer3{
+                background-image: url(../Img/Galaxiaa.jpg);
+                grid-area: timer3;
+                width: 300px;
+                height: 450px;
+                text-decoration: none;
+                font-size: 30px;
+                text-align: center;
+                border-radius: 20px;
+                img{
+                    width: 250px;
+                    height: 250px;
+                    margin-top: 20px;
+                    margin-bottom: 20px;
+                    border-radius: 30px;
+                }
+                .descripcionfoto{
+                    font-size: 30px;
+                background-color: white;
+                color: black;
+                border-radius: 30px;
+                padding: 5px;
+                text-align: center;
+                }
+                .separador{
+                    display: flex;
+            justify-content: center;
+            margin-top: 20px;
+            
+            .precio{
+                font-size: 30px;
+                padding: 8px;
+                color: black;
+                background-color: white;
+                border-radius: 30px;
+            }
+            .iralaimg{
+                font-size: 30px;
+                color: white;
+                background-color: #4943de;
+                height: 40px;
+                width: 100px;
+                border-radius: 30px;
+                margin: 5px;
+                
+            }
+                }
+            }
+    }
+    .potencia{
+        width: 100%;
+        height: auto;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr;
+        grid-template-areas: 
+        "potencia1 potencia2 potencia3"            
+        ;
+        padding: 30px ;
+        gap: 30px;
+        
+        .potencia1{
+            background-image: url(../Img/Galaxiaa.jpg);
+            grid-area: potencia1;
+            width: 300px;
+            height: 450px;
+            text-decoration: none;
+            font-size: 30px;
+            text-align: center;
+            border-radius: 20px;
+            img{
+                width: 250px;
+                height: 250px;
+                margin-top: 20px;
+                margin-bottom: 20px;
+                border-radius: 30px;
+            }
+            .descripcionfoto{
+                font-size: 30px;
+            background-color: white;
+            color: black;
+            border-radius: 30px;
+            padding: 5px;
+            text-align: center;
+            }
+            .separador{
+                display: flex;
+        justify-content: center;
+        margin-top: 20px;
+        
+        .precio{
+            font-size: 30px;
+            padding: 8px;
+            color: black;
+            background-color: white;
+            border-radius: 30px;
+        }
+        .iralaimg{
+            font-size: 30px;
+            color: white;
+            background-color: #4943de;
+            height: 40px;
+            width: 100px;
+            border-radius: 30px;
+            margin: 5px;
+            
+        }
+            }
+        }
+        .potencia2{
+            background-image: url(../Img/Galaxiaa.jpg);
+            grid-area: potencia2;
+            width: 300px;
+            height: 450px;
+            text-decoration: none;
+            font-size: 30px;
+            text-align: center;
+            border-radius: 20px;
+            img{
+                width: 250px;
+                height: 250px;
+                margin-top: 20px;
+                margin-bottom: 20px;
+                border-radius: 30px;
+            }
+            .descripcionfoto{
+                font-size: 30px;
+            background-color: white;
+            color: black;
+            border-radius: 30px;
+            padding: 5px;
+            text-align: center;
+            }
+            .separador{
+                display: flex;
+        justify-content: center;
+        margin-top: 20px;
+        
+        .precio{
+            font-size: 30px;
+            padding: 8px;
+            color: black;
+            background-color: white;
+            border-radius: 30px;
+        }
+        .iralaimg{
+            font-size: 30px;
+            color: white;
+            background-color: #4943de;
+            height: 40px;
+            width: 100px;
+            border-radius: 30px;
+            margin: 5px;
+            
+        }
+            }
+        }
+        .potencia3{
+            background-image: url(../Img/Galaxiaa.jpg);
+            grid-area: potencia3;
+            width: 300px;
+            height: 450px;
+            text-decoration: none;
+            font-size: 30px;
+            text-align: center;
+            border-radius: 20px;
+            img{
+                width: 250px;
+                height: 250px;
+                margin-top: 20px;
+                margin-bottom: 20px;
+                border-radius: 30px;
+            }
+            .descripcionfoto{
+                font-size: 30px;
+            background-color: white;
+            color: black;
+            border-radius: 30px;
+            padding: 5px;
+            text-align: center;
+            }
+            .separador{
+                display: flex;
+        justify-content: center;
+        margin-top: 20px;
+        
+        .precio{
+            font-size: 30px;
+            padding: 8px;
+            color: black;
+            background-color: white;
+            border-radius: 30px;
+        }
+        .iralaimg{
+            font-size: 30px;
+            color: white;
+            background-color: #4943de;
+            height: 40px;
+            width: 100px;
+            border-radius: 30px;
+            margin: 5px;
+            
+        }
+            }
+        }
+}
+}
+.nosotros{
+    width: 100%;
+    h2{
+        height: 50px;
+    }
+        p{
+            margin: auto;
+            height: auto;
+            width: 1000px;
+            font-size: 30px;
+        }
+}
+.nosotros{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 150px 1fr;
+    grid-template-areas: "h2" "p";
+    h2{
+        grid-area: h2;
+    }
+        p{
+            background-image: radial-gradient(circle, #7b75ff, #8768e5, #8d5ccc, #8d51b4, #8a489d, #834090, #7c3884, #753178, #6c2871, #621f6b, #591564, #4f095e);
+            border:  #350441 3px solid;
+            border-radius: 100px;
+            width: 1100px;
+            text-align: center;
+            margin: auto;
+            padding: 15px;
+            grid-area: p;
+        }
+
+}
+.nosotro{
+
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: "h3" "p";
+    
+    .equipo{
+        grid-area: h3;
+        color: #753178;
+        padding: 20px;
+        background-color: white;
+        border-radius: 100px;
+        justify-content: center;
+        margin: auto;
+        gap: 50px;
+        width: max-content;
+}
+ul{ grid-area: p;
+    li{
+        background-image: radial-gradient(circle, #7b75ff, #8768e5, #8d5ccc, #8d51b4, #8a489d, #834090, #7c3884, #753178, #6c2871, #621f6b, #591564, #4f095e);
+    border:  #350441 3px solid;
+    border-radius: 100px;
+    width: max-content;
+    text-align: center;
+    margin: auto;
+    font-size: 20px;
+    padding: 30px;
+    display: flex;
+    font-style: none;
+    flex-direction: row;
+    }
+}
+    .objetivo{
+        background-image: radial-gradient(circle, #7b75ff, #8768e5, #8d5ccc, #8d51b4, #8a489d, #834090, #7c3884, #753178, #6c2871, #621f6b, #591564, #4f095e);
+        border:  #350441 3px solid;
+        border-radius: 100px;
+        width: 400px;
+        text-align: center;
+        margin: auto;
+        font-size: 20px;
+        padding: 30px;
+        display: flex;
+        font-style: none;
+        flex-direction: row;
+    }
+    div{
+        
+    p{
+        grid-area: p;
+        background-image: radial-gradient(circle, #7b75ff, #8768e5, #8d5ccc, #8d51b4, #8a489d, #834090, #7c3884, #753178, #6c2871, #621f6b, #591564, #4f095e);
+        border:  #350441 3px solid;
+        border-radius: 100px;
+        width: max-content;
+        font-size: 20px;
+        margin: 50px;
+        padding: 10px;
+        
+    }
+    display: flex;
+        justify-content: space-between;
+}
+}
+}
+
+    footer{
+    .footer{
+        width: 100%;
+        height: 300px;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr;
+        grid-template-areas: 
+        "imgfooter footer1 footer2 footer3"
+        ;
+        background-color: #145e09   ;
+        .imagenfooter{
+            grid-area: imgfooter;
+            width: auto;
+            height: 300px;
+            justify-self: center;
+            img{
+                width: 200px;
+                height: 200px;
+                background-color: beige;
+                margin-top: 50px;
+            }
+        }
+        .footer0{
+            grid-area: footer1;
+            height: 300px;
+            width: auto;
+            justify-self: center;
+            .footer1{
+                margin-top: 5px;
+                line-height: 30px;
+                display: flex;
+                flex-direction: column;
+            }
+        .pfooter{
+            margin-top: 50px;
+            font-size: 40px;
+            color: burlywood;
+        }
+        a{
+            font-size: 25px;
+            text-decoration: none;
+            color: white;
+        }
+        }
+        .footer2{
+            grid-area: footer2;
+            width: auto;
+            height: 300px;
+            justify-self: center;
+            line-height: 35px;
+            padding-top: 60px;
+            
+
+            a{
+                color: white;
+                text-decoration: none;
+                
+                img{
+                    height: 25px;
+                    width: 25px;
+                    border-radius: 30px;
+                }
+            }
+            .contactos{
+                font-size: 25px;
+                color: white;
+            }
+                font-size: 25px;
+                color: white;
+            .footerr{
+                padding-bottom: 8px;
+                p{
+                    font-size: 40px;
+                    color: burlywood;
+                }
+            }
+        }
+        .footer3{ 
+            grid-area: footer3;
+            width: auto;
+            height: 300px;
+            justify-self: center;
+            padding-top: 50px;
+            .pfooter{
+                font-size: 40px;
+                color: burlywood;
+            }
+            a{
+                display: flex;
+                padding: 5px;
+                img{
+                width: 35px;
+                height: 35px;
+            }
+        }
+    }
+}
+    }
+}
+@media (max-width:1024px) {
+    body{ 
+        main{
+            .primerdiv{
+                width: auto;
+                height: 500px;
+                div{
+                    margin: auto;
+                    background-position: center;
+                    width: auto;
+                    height: 400px;
+                    a{
+                    width: 300px;
+                    height: 400px;
+                    
+                    .h4{
+                        font-size: 23px;
+                        width: 150px;
+                    }
+                    h4{
+                        font-size: 23px;
+                    }
+                    img{
+                        width: 200px;
+                        height: 200px;
+                        justify-content: center;
+                    }
+                    p{
+                        font-size: 15px;
+                    }
+                }
+            }
+            }
+            .armatuindoor{
+                .iluminacion{
+                    grid-template-columns: 1fr 1fr;
+                    grid-template-rows: 1fr 1fr;
+                    grid-template-areas: 
+                    "iluminacion1 iluminacion2" 
+                    "iluminacion3 iluminacion4";
+                }
+                
+                .ventilacion{
+                    grid-template-columns: 1fr 1fr;
+                    grid-template-rows: 1fr 1fr;
+                    grid-template-areas: 
+                    "ventilacion1 ventilacion2"
+                    "ventilacion3 ventilacion4";
+                }
+            }
+            }
+.ns{
+width: 100%;
+.nosotros{
+                width: 100%;
+                height: 500px;
+                grid-template-columns: 1fr;
+                grid-template-rows: 150px 1fr;
+                grid-template-areas: "h2" "p";
+                p{
+                    font-size: 30px;
+                    height: 250px;
+                    width: 900px;
+                    padding-top: 45px;
+                }
+
+            }
+            .nosotro{
+                div{
+                    width: 100%;
+                    display: grid;
+                    grid-template-columns: 1fr 1fr;
+                    grid-template-rows: 150px 150px;
+                    grid-template-areas: "p1 p2" 
+                    "p3 p4";
+                
+                    .p1{
+                        grid-area: p1;
+                        width: max-content;
+                        margin: auto;
+                    }
+                    .p2{
+                        grid-area: p2;
+                        width: max-content;
+                        margin: auto;
+                    }
+                    .p3{
+                        grid-area: p3;
+                        width: max-content;
+                        margin: auto;
+                    }
+                    .p4{
+                        grid-area: p4;
+                        width: max-content;
+                        margin: auto;
+                    }
+                }
+            }
+        }
+        .main{
+            h2{
+                font-size: 40px;
+            }
+            .parafernalia{
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 1fr 1fr 1fr;
+            grid-template-areas: 
+            "para1 para2"
+            "para3 para4"
+            "para5 para6"
+            ;
+        }
+        
+        }
+        footer{
+            .footer{
+                padding-top: 0px;
+                height: 250px;
+                .imagenfooter{
+                    height: 200px;
+                    width: 200px;
+                    grid-area: imgfooter;
+                    img{
+                        height: 200px;
+                        margin-top: 25px;
+                    }
+                }
+                .footer0{
+                    height: 200px;
+                    width: auto;
+                    .pfooter{
+                        font-size: 40px;
+                    }
+                    div{
+                        a{
+                        font-size: 25px;
+                    }
+                }
+                }
+                .footer2{
+                    height: 200px;
+                    width: auto;
+                    .footerr{
+                        p{
+                            font-size: 40px;
+                        }
+                    }
+                    .contactos{
+                        font-size:20px;
+                    }
+                    a{
+                        font-size: 23px;
+                        img{
+                            width: 20px;
+                            height: 20px;
+                        }
+                    }
+                    .pfooter2{
+                        font-size: 23px;
+                        line-height: 20px;
+                    }
+                }
+                .footer3{
+                    height: 200px;
+                    width: auto;
+                    .pfooter{
+                        font-size: 40px;
+                    }
+                }
+            }
+        }
+    }
+}
+@media (max-width:768px) {
+    body{
+        header{
+            width: 100%;
+            height: auto;
+            .sect{
+                width: 100%;
+                display: grid;
+                grid-template-columns: 50px 1fr;
+                grid-template-areas: 
+                "a input"
+                "div div"
+                ;
+            img{
+                grid-area: a;
+            }
+            .search{
+                grid-area: input;
+            }
+            .contactos{
+                grid-area: div;
+                justify-self: center;
+            }
+        }
+            
+        section{
+            width: auto;
+            display: grid;
+            grid-template-columns: 50px 1fr;
+            grid-template-rows: 1fr 1fr;
+            grid-template-areas:
+            "img input"
+            "div div"
+            ;
+            .search{
+                padding-left: 0px;
+                margin-left: 0px;
+            }
+            .contactos{
+            grid-area: div;
+            display: flex;
+            justify-content: space-between;
+            }
+        }
+        }
+        .header{
+            height:200px;
+            section{
+            grid-template-rows:100px 50px;
+        }
+        }
+        main{
+            width: 100%;
+            height: auto;
+            h2{
+                font-size: 60px;
+                color: rgb(134, 114, 114);
+                color: white;
+            }
+        .primerdiv{
+            width: 100%;
+            height: auto;
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: 1fr 1fr 1fr;
+            grid-template-areas: 
+            "primerdiv1"
+            "primerdiv2"
+            "primerdiv3"
+            ;
+            gap: 20px;
+            .primerdiv1{
+                grid-area:primerdiv1;
+            }
+            .primerdiv2{
+                grid-area:primerdiv2;
+            }
+            .primerdiv3{
+                grid-area:primerdiv3;
+            }
+        }
+        .semas{
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 1fr 1fr 1fr 1fr;
+            grid-template-areas: 
+            "sema1 sema2"
+            "sema3 sema4"
+            "sema5 sema6"
+            "sema7 sema8"
+            ;
+
+            
+        }
+        h3{
+            margin: auto;
+            padding: 20px;
+            font-size: 60px;
+        }
+        .foto{
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 1fr 1fr 1fr 1fr;
+            grid-template-areas: 
+            "foto1 foto2"
+            "foto3 foto4"
+            "foto5 foto6"
+            "foto7 foto8"
+            ;
+        }
+        .cbd{
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 1fr 1fr 1fr 1fr;
+            grid-template-areas: 
+            "cbd1 cbd2"
+            "cbd3 cbd4"
+            "cbd5 cbd6"
+            "cbd7 cbd8"
+            ;
+        }
+        .armatuindoor{
+            width: 100%;
+
+            .h3{
+                font-size: 50px;
+                width: auto;
+                margin: auto;
+            }
+            .carpas{
+                grid-template-columns: 1fr 1fr;
+                grid-template-rows: 100px 1fr 1fr;
+                grid-template-areas: 
+                "h3 h3"
+                "carpa1 carpa2"
+                "carpa3 carpa3";
+                .carpa1{
+                    padding-top: 0px;
+                }
+                .h3{
+                font-size: 50px;
+                width: auto;
+                margin: auto;
+            }
+        }
+        .timer{
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 1fr 1fr;
+            grid-template-areas: 
+            "timer1 timer2"
+            "timer3 timer3"
+            ;
+        }
+        }
+    }
+    .ns{   
+        .nosotros{
+            height: 400px;
+            p{
+                margin-top: 0px;
+                width: 500px;
+                font-size: 20px;
+            }
+        }
+        .nosotro{
+            height: 400px;
+            .equipo{
+                height: 100px;
+            }
+            div{
+                margin-top: 0px;
+            }
+        }
+    }
+.main{
+    .parafernalia{
+        .para1{
+            width: 300px;
+            height: 300px;
+            p{
+                font-size: 25px;
+                width: 150px;
+            }
+            img{
+                width:250px;
+                height: 250px;
+            }
+        }
+        .para2{
+            width: 300px;
+            height: 300px;
+            p{
+                font-size: 25px;
+                width: 150px;
+            }
+            img{
+                width:250px;
+                height: 250px;
+            }
+        }
+        .para3{
+            width: 300px;
+            height: 300px;
+            p{
+                font-size: 25px;
+                width: 150px;
+            }
+            img{
+                width:250px;
+                height: 250px;
+            }
+        }
+        .para4{
+            width: 300px;
+            height: 300px;
+            p{
+                font-size: 25px;
+                width: 150px;
+            }
+            img{
+                width:250px;
+                height: 250px;
+            }
+        }
+        .para5{
+            width: 300px;
+            height: 300px;
+            p{
+                font-size: 25px;
+                width: 150px;
+            }
+            img{
+                width:250px;
+                height: 250px;
+            }
+        }
+        .para6{
+            width: 300px;
+            height: 300px;
+            p{
+                font-size: 25px;
+                width: 150px;
+            }
+            img{
+                width:250px;
+                height: 250px;
+            }
+        }
+    }
+    
+}
+    footer{
+        .footer{
+            grid-template-rows: 1fr;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-areas: 
+            "footer1 footer2 footer3"
+            ;
+        }
+        .imagenfooter{
+            display: none;
+        }
+        }
+    }
+}
+@media (max-width: 425px){
+    body{
+        width: 100%;
+        .header{
+            width: 100%;
+            height: 200px;
+        }
+        header{
+            width: 100%;
+            height: 100px;
+            .sect{
+                width: 100%;
+                height: 100px;
+                grid-template-columns: 1fr;
+                grid-template-rows: 1fr 1fr;
+                grid-template-areas: 
+                "input"
+                "div"
+                ;
+                .img{
+                    display: none;
+                }
+            .search{
+                margin: auto;
+                height: 50px;
+            }
+            .contactos{
+                display: flex;
+                li{
+                width: 70px;
+                margin: 15px;
+                }
+                margin: auto;
+                height: 50px;
+                padding: 0px;
+            }
+            }
+            section{
+                width: auto;
+                height: 200px;
+                grid-template-columns: 1fr;
+                grid-template-rows: 80px 1fr 1fr;
+                grid-template-areas: 
+                "img" 
+                "input"
+                "div";
+                a {
+                width: 100%;
+                height: auto;
+                justify-content: center;
+                    img{
+                        width: 100px;
+                        height: 80px;
+                        margin-left: 0px;
+                    }
+                }
+                .search{
+                    margin: auto;
+                    height: 50px;
+                    margin: 0px;
+                }
+                .contactos{
+                    li{
+                        width: 70px;
+                        margin: 15px;
+                        }
+                    margin: auto;
+                    height: 50px;
+                    padding: 0px;
+                }
+            }
+        }
+        .ns{
+            width: 100%;
+            .nosotros{
+                width: 100%;
+                height: auto;
+                p{
+                    width: 350px;
+                    height: 300px;
+                }
+            }
+        .nosotro{
+            .equipo{
+                font-size: 40px;
+            }
+            div{
+                height: 300px;
+                grid-template-columns: 1fr;
+                grid-template-rows: 1fr 1fr 1fr 1fr;
+                grid-template-areas: 
+                "p1"
+                "p2"
+                "p3"
+                "p4";
+                .p1{
+                margin:20px auto; 
+                }
+            }
+        }
+        }
+        .main{
+            .parafernalia{
+            grid-template-columns: 1fr;
+            grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+            grid-template-areas: 
+            "para1"
+            "para2"
+            "para3"
+            "para4"
+            "para5"
+            "para6"
+            ;
+            }
+        }
+        main{
+            h1{
+                font-size: 50px;
+                gap:10px;
+            }
+            .semas{
+                grid-template-columns: 1fr;
+                    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+                    grid-template-areas: 
+                    "sema1" 
+                    "sema2"
+                    "sema3" 
+                    "sema4"
+                    "sema5" 
+                    "sema6"
+                    "sema7" 
+                    "sema8"
+                    ;
+            }
+            .foto{
+                grid-template-columns: 1fr;
+                    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+                    grid-template-areas:
+                    "foto1"
+                    "foto2"
+                    "foto3"
+                    "foto4"
+                    "foto5"
+                    "foto6"
+                    "foto7"
+                    "foto8"
+                    "foto9";
+            }
+            .cbd{
+                grid-template-columns: 1fr;
+                    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+                    grid-template-areas:
+                    "cbd1"
+                    "cbd2"
+                    "cbd3"
+                    "cbd4"
+                    "cbd5"
+                    "cbd6"
+                    "cbd7"
+                    "cbd8"
+                    "cbd9"
+            }
+            .armatuindoor{
+
+                .carpas{
+                
+                    grid-template-columns: 1fr;
+                    grid-template-rows: 100px 1fr 1fr 1fr;
+                    grid-template-areas: 
+                    "h3"
+                    "carpa1"
+                    "carpa2" 
+                    "carpa3";
+                    .h3{
+                        font-size: 35px;
+                        text-align: center;
+                    }
+                    .carpa1{
+                        width: 250px;
+                        height: 350px;
+                        img{
+                            width: 200px;
+                            height: 200px;
+                        }
+                        .descripcionfoto{
+                            padding-top: 0px;
+                            
+                            font-size: 20px;
+                        }
+                        .separador{
+                            padding-top: 0px;
+                            margin-top: 10px;
+                            .precio{
+                                font-size: 20px;
+                                width: auto;
+                                height: 40px;
+                            }
+                            .iralaimg{
+                                font-size: 20px;
+                                width: 50px;
+                                padding:5px;
+                                margin-top: 0px;
+                                padding-left: 10px;
+                            }
+                        }
+                    }
+                    .carpa2{
+                        width: 250px;
+                        height: 350px;
+                        img{
+                            width: 200px;
+                            height: 200px;
+                        }
+                        .descripcionfoto{
+                            font-size: 20px;
+                            padding-top: 0px;
+                        }
+                        .separador{
+                            padding-top: 0px;
+                            margin-top: 10px;
+                            .precio{
+                                font-size: 20px;
+                                width: auto;
+                                height: 40px;
+                            }
+                            .iralaimg{
+                                font-size: 20px;
+                                width: 50px;
+                                padding:5px;
+                                margin-top: 0px;
+                                padding-left: 10px;
+                            }
+                        }
+                    }
+                    .carpa3{
+                        width: 250px;
+                        height: 350px;
+                        img{
+                            width: 200px;
+                            height: 200px;
+                        }
+                        .descripcionfoto{
+                            font-size: 20px;
+                            padding-top: 0px;
+                        }
+                        .separador{
+                            padding-top: 0px;
+                            margin-top: 10px;
+                            .precio{
+                                font-size: 20px;
+                                width: auto;
+                                height: 40px;
+                            }
+                            .iralaimg{
+                                font-size: 20px;
+                                width: 50px;
+                                padding:5px;
+                                margin-top: 0px;
+                                padding-left: 10px;
+                            }
+                        }
+                    }
+
+
+                }
+                .h3{
+                    font-size: 30px;
+                    text-align: center;
+                    width: 300px;
+                    height: auto;
+                    align-content: center;
+                }
+                .h3ventilacion{
+                    font-size: 40px;
+                    text-align: center;
+                    width: 230px;
+                    height: auto;
+                }
+                .iluminacion{
+                grid-template-columns: 1fr;
+                grid-template-rows: 1fr 1fr 1fr 1fr;
+                grid-template-areas: 
+                "iluminacion1"
+                "iluminacion2"
+                "iluminacion3"
+                "iluminacion4";
+                .iluminacion1{
+                    width: 250px;
+                        height: 350px;
+                        img{
+                            width: 200px;
+                            height: 200px;
+                        }
+                        .descripcionfoto{
+                            font-size: 20px;
+                            padding-top: 0px;
+                            
+                        }
+                        .separador{
+                            padding-top: 0px;
+                            margin-top: 5px;
+                            
+                            .precio{
+                                font-size: 20px;
+                                width: auto;
+                                height: 40px;
+                            }
+                            .iralaimg{
+                                font-size: 20px;
+                                width: 50px;
+                                padding:5px;
+                                margin-top: 0px;
+                                padding-left: 0px;
+                            }
+                        }
+                    }
+                    .iluminacion2{
+                    width: 250px;
+                    height: 350px;
+                    img{
+                        width: 200px;
+                        height: 200px;
+                    }
+                    .descripcionfoto{
+                        font-size: 20px;
+                        padding-top: 0px;
+                    }
+                    .separador{
+                        padding-top: 0px;
+                        margin-top: 5px;
+                        .precio{
+                            font-size: 20px;
+                            width: auto;
+                            height: 40px;
+                        }
+                        .iralaimg{
+                            font-size: 20px;
+                                width: 50px;
+                                padding:5px;
+                                margin-top: 0px;
+                                padding-left: 0px;
+                        }
+                    }
+                }
+                .iluminacion3{
+                    width: 250px;
+                        height: 350px;
+                        img{
+                            width: 200px;
+                            height: 200px;
+                        }
+                        .descripcionfoto{
+                            font-size: 20px;
+                            padding-top: 0px;
+                        }
+                        .separador{
+                            padding-top: 0px;
+                            margin-top: 5px;
+                            .precio{
+                                font-size: 20px;
+                                width: auto;
+                                height: 40px;
+                            }
+                            .iralaimg{
+                                font-size: 20px;
+                                width: 50px;
+                                padding:5px;
+                                margin-top: 0px;
+                                padding-left: 0px;
+                            }
+                        }
+                    }
+                    .iluminacion4{
+                        width: 250px;
+                        height: 350px;
+                        img{
+                            width: 200px;
+                            height: 200px;
+                        }
+                        .descripcionfoto{
+                            font-size: 20px;
+                            padding-top: 0px;
+                        }
+                        .separador{
+                            padding-top: 0px;
+                            margin-top: 5px;
+                            .precio{
+                                font-size: 20px;
+                                width: auto;
+                                height: 40px;
+                            }
+                            .iralaimg{
+                                font-size: 20px;
+                                width: 50px;
+                                padding:5px;
+                                margin-top: 0px;
+                                padding-left: 0px;
+                            }
+                        }
+                    }
+                }
+                .ventilacion{
+                    grid-template-columns:1fr;
+                    grid-template-rows: 1fr 1fr 1fr 1fr;
+                    grid-template-areas: 
+                    "ventilacion1"
+                    "ventilacion2"
+                    "ventilacion3"
+                    "ventilacion4"
+                    ;
+                    .ventilacion1{
+                        width: 250px;
+                        height: 350px;
+                        img{
+                            width: 200px;
+                            height: 200px;
+                        }
+                        .descripcionfoto{
+                            font-size: 20px;
+                            padding-top: 0px;
+                        }
+                        .separador{
+                            padding-top: 0px;
+                            margin-top: 5px;
+                            .precio{
+                                font-size: 20px;
+                                width: auto;
+                                height: 40px;
+                            }
+                            .iralaimg{
+                                font-size: 20px;
+                                width: 50px;
+                                padding:5px;
+                                margin-top: 0px;
+                                padding-left: 0px;
+                            }
+                        }
+                    }
+                .ventilacion2{
+                    width: 250px;
+                    height: 350px;
+                    img{
+                        width: 200px;
+                        height: 200px;
+                    }
+                    .descripcionfoto{
+                        font-size: 20px;
+                        padding-top: 0px;
+                    }
+                    .separador{
+                        padding-top: 0px;
+                        margin-top: 5px;
+                        .precio{
+                            font-size: 20px;
+                            width: auto;
+                            height: 40px;
+                        }
+                        .iralaimg{
+                            font-size: 20px;
+                                width: 50px;
+                                padding:5px;
+                                margin-top: 0px;
+                                padding-left: 0px;
+                        }
+                    }
+                }
+            .ventilacion3{
+                width: 250px;
+                height: 350px;
+                img{
+                    width: 200px;
+                    height: 200px;
+                }
+                .descripcionfoto{
+                    font-size: 20px;
+                    padding-top: 0px;
+                }
+                .separador{
+                    padding-top: 0px;
+                    margin-top: 5px;
+                    .precio{
+                        font-size: 20px;
+                        width: auto;
+                        height: 40px;
+                    }
+                    .iralaimg{
+                        font-size: 20px;
+                                width: 50px;
+                                padding:5px;
+                                margin-top: 0px;
+                                padding-left: 0px;
+                    }
+                }
+            }
+            .ventilacion4{
+                width: 250px;
+                height: 350px;
+                img{
+                    width: 200px;
+                    height: 200px;
+                }
+                .descripcionfoto{
+                    font-size: 20px;
+                    padding-top: 0px;
+                }
+                .separador{
+                    padding-top: 0px;
+                    margin-top: 5px;
+                    .precio{
+                        font-size: 20px;
+                        width: auto;
+                        height: 40px;
+                    }
+                    .iralaimg{
+                        font-size: 20px;
+                        width: 50px;
+                        padding:5px;
+                        margin-top: 0px;
+                        padding-left: 0px;
+                    }
+                }
+            }
+            }
+                .timer{
+                    grid-template-columns: 1fr;
+                    grid-template-rows: 1fr 1fr 1fr;
+                    grid-template-areas: 
+                    "timer1"
+                    "timer2"
+                    "timer3 "
+                    ;
+                    
+                    .timer1{
+                        width: 250px;
+                        height: 350px;
+                        img{
+                            width: 200px;
+                            height: 200px;
+                        }
+                        .descripcionfoto{
+                            font-size: 20px;
+                            padding-top: 0px;
+                        }
+                        .separador{
+                            padding-top: 0px;
+                            margin-top: 5px;
+                            .precio{
+                                font-size: 20px;
+                                width: auto;
+                                height: 40px;
+                            }
+                            .iralaimg{
+                                font-size: 20px;
+                                width: 50px;
+                                padding:5px;
+                                margin-top: 0px;
+                                padding-left: 0px;
+                            }
+                        }
+                    }
+                    .timer2{
+                        width: 250px;
+                        height: 350px;
+                        img{
+                            width: 200px;
+                            height: 200px;
+                        }
+                        .descripcionfoto{
+                            font-size: 20px;
+                            padding-top: 0px;
+                        }
+                        .separador{
+                            padding-top: 0px;
+                            margin-top: 5px;
+                            .precio{
+                                font-size: 20px;
+                                width: auto;
+                                height: 40px;
+                            }
+                            .iralaimg{
+                                font-size: 20px;
+                                width: 50px;
+                                padding:5px;
+                                margin-top: 0px;
+                                padding-left: 0px;
+                            }
+                        }
+                    }
+                    .timer3{
+                        width: 250px;
+                        height: 350px;
+                        img{
+                            width: 200px;
+                            height: 200px;
+                        }
+                        .descripcionfoto{
+                            font-size: 20px;
+                            padding-top: 0px;
+                        }
+                        .separador{
+                            padding-top: 0px;
+                            margin-top: 5px;
+                            .precio{
+                                font-size: 20px;
+                                width: auto;
+                                height: 40px;
+                            }
+                            .iralaimg{
+                                font-size: 20px;
+                                width: 50px;
+                                padding:5px;
+                                margin-top: 0px;
+                                padding-left: 0px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        footer{
+            height: 150px;
+            .footer{
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-rows: 1fr;
+                grid-template-areas: "footer1 footer2 footer3";
+            .footer0{
+                    height: 150px;
+                    
+                    .pfooter{
+                        font-size: 25px;
+                    }
+                    .footer1{
+                        a{
+                            font-size: 15px;
+                        }
+                    }
+                }
+                .footer2{
+                    height: 150px;
+                    padding-top: 50px;
+                    justify-content: center;
+                    .footerr{
+                        
+                        p{
+                        font-size: 25px;
+                        margin-bottom: 0px;
+                    }
+                }
+                    .contactos{
+                        font-size: 15px;
+                    }
+                    a{
+                        font-size: 15px;
+                    }
+                    .pfooter2{
+                        font-size: 15px;
+                    }
+                }
+                .footer3{
+                    height: 150px;
+                    padding-top: 55px;
+                    .pfooter{
+                        font-size: 25px;
+                        display: flex;
+                        justify-content: center;
+                    }
+                    div{
+                        display: flex;
+                    }
+                }
+            }
+        }
+    }
+
+}
+@media (max-width:375px){
+    body{
+        .header{
+            height: 80px;
+        }
+        header{
+            width: 100%;
+            height: 100px;
+            .sect{
+                width: 100%;
+                height: 100px;
+                grid-template-columns:1fr ;
+                grid-template-rows:1fr;
+                grid-template-areas: 
+                "input"
+                "div"
+                ;
+                .search{
+                    width: 100px;
+                    
+                }
+                .contactos{
+                    width: 300px;
+                    justify-content:center;
+                    margin-left: 0px;
+                    padding: 0px;
+                    margin: 0px;
+                    
+                    li{ 
+                        width: 55px;
+                        a{
+                            font-size: 15px;
+                        
+                    }
+                }
+
+                }
+        }
+        section{
+            width: 100%;
+                height: 100px;
+                grid-template-columns: 1fr 1fr ;
+                grid-template-rows: 1fr 1fr;
+                grid-template-areas: 
+                "img input"
+                "div div"
+                ;
+                
+                a{img{
+                    width: 50px;
+                    height: 50px;
+                    margin-left: 0px;
+                }
+                }
+                .search{
+                    width: 100px;
+                    margin-left: 0px;
+                }
+                .contactos{
+                    width: 300px;
+                    justify-content:center;
+                    padding: 1rem;
+                    
+                    li{ 
+                        width: 55px;
+                        a{
+                            font-size: 15px;
+                        
+                    }
+                }
+                }
+        }
+    }
+    main{
+        h2{
+            font-size: 40px;
+        }
+        h3{
+            font-size: 35px;
+            padding-top: 10px;
+        }
+        .semas{
+            padding-top: 0px;
+        }
+        .primerdiv{
+            .primerdiv1{
+                width: 250px;
+                height: 350px;
+                margin-top: 0px;
+            a{
+                .h4{
+                    font-size: 20px;
+                    justify-content: center;
+                    margin:auto;
+                    margin-top:10px
+                }
+                img{
+                    width: 200px;
+                    height: 200px;
+                    margin-right: 40px;
+                }
+                p{
+                    font-size: 15px;
+                    width: 200px;
+                    margin: auto;
+                }
+            }
+            }
+            .primerdiv2{
+                width: 250px;
+                height: 350px;
+                margin-top: 0px;
+            a{
+                h4{
+                    width: 200px;
+                    font-size: 20px;
+                    justify-content: center;
+                    margin:auto;
+                    margin-top:10px
+                }
+                img{
+                    width: 200px;
+                    height: 200px;
+                    margin-right: 40px;
+                }
+                p{
+                    font-size: 15px;
+                    width: 200px;
+                    margin: auto;
+                }
+            }
+            }
+            .primerdiv3{
+                width: 250px;
+                height: 350px;
+                margin-top: 0px;
+            a{
+                h4{
+                    width:200px;
+                    font-size: 20px;
+                    justify-content: center;
+                    margin:auto;
+                    margin-top:10px
+                }
+                img{
+                    width: 200px;
+                    height: 200px;
+                    margin-right: 40px;
+                }
+                p{
+                    font-size: 15px;
+                    width: 200px;
+                    margin: auto;
+                }
+            }
+            }
+        }
+        .armatuindoor{
+            .carpas{
+                .h3{
+                    font-size: 30px;
+                    height: 90px;
+                }
+            }
+            .h3{
+                font-size: 30px;
+                height: 90px;
+            }
+            .h3ventilacion{
+                font-size: 30px;
+                height: 45px;
+                width: 160px;
+            }
+        }
+    }
+    .ns{
+        .nosotro{
+            .objetivo{
+                width: 100%;
+            }
+        }
+    }
+    .main{
+        h2{
+            font-size: 30px;
+        }
+        .parafernalia{
+            .para1{
+                width: 250px;
+                height: 250px;
+            img{
+                width: 200px;
+                height: 200px;
+            }
+            }
+            .para2{
+                width: 250px;
+                height: 250px;
+            img{
+                width: 200px;
+                height: 200px;
+            }
+            }
+            .para3{
+                width: 250px;
+                height: 250px;
+            img{
+                width: 200px;
+                height: 200px;
+            }
+            }
+            .para4{
+                width: 250px;
+                height: 250px;
+            img{
+                width: 200px;
+                height: 200px;
+            }
+            }
+            .para5{
+                width: 250px;
+                height: 250px;
+            img{
+                width: 200px;
+                height: 200px;
+            }
+            }
+            .para6{
+                width: 250px;
+                height: 250px;
+            img{
+                width: 200px;
+                height: 200px;
+            }
+            }
+        }
+    }
+    footer{
+        .footer{
+        height: auto;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 50px;
+        grid-template-areas: 
+        "footer1 footer2"
+        "footer3 footer3"
+        ;
+        .footer0{
+.pfooter{
+    height: auto;
+    margin-top: 10px;
+}
+.footer1{
+    margin: 0px;
+}
+
+        }
+        .footer2{
+            margin-top: 0px;
+            padding-top: 10px;
+            p{
+                height: 25px;
+            }
+            .footerr{
+                padding-top: 0px;
+                margin-top: 0px;
+            }
+        }
+        .footer3{
+            height: 50px;
+            display: flex;
+            margin-top: 0px;
+            padding-top: 0px;
+            .pfooter{
+            height: 40px;
+            margin-top: 0px;
+            margin: auto;
+        }
+            div{
+                width: auto;
+                height: 40px;
+                margin-top: 0px;
+            }
+        }
+    }
+}
+}
+}
+@media (max-width:375px){
+    
+    body{
+    
+    .header{
+        section{
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 50px 50px;
+    }
+}
+.ns{
+    width: 100%;
+    .nosotros{
+        width: 100%;
+        grid-template-columns: 1fr;
+        grid-template-rows: 100px 1fr;
+        h2{
+            padding: 20px;
+        }
+        
+        p{
+            padding-top: 0px;
+            width: 280px;
+            height: auto;
+            padding: 20px;
+        }
+    }
+    .nosotro{
+        width: 100%;
+        .equipo{
+            width: 280px;
+            font-size: 35px;
+            margin: auto 20px;
+        }
+        ul{
+            li{
+                width: auto;
+            }
+        }
+    }
+}
+}
+}
